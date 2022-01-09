@@ -35,50 +35,50 @@
                         <form class="forms-sample">
                           <div class="form-group">
                             <label for="exampleInputName1">Name</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">Roll No</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Roll No">
+                            <input type="text" class="form-control" id="roll_no" name="roll_no" placeholder="Roll No">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">Semester</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Semester">
+                            <input type="text" class="form-control" id="sem" name="sem" placeholder="Semester">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">Touter</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Touter">
+                            <input type="text" class="form-control" id="touter" name="touter" placeholder="Touter">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">Addmission No</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Addmission No">
+                            <input type="text" class="form-control" id="addmission_no" name="addmission_no" placeholder="Addmission No">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputEmail3">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">Address</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Address">
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Address">
                           </div>
                           <div class="form-group">
                             <label for="exampleSelectGender">Gender</label>
-                            <select class="form-control" id="exampleSelectGender">
+                            <select class="form-control" id="gender" name="gender">
                               <option>Male</option>
                               <option>Female</option>
                             </select>
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword4">Blood Group</label>
-                            <input type="password" class="form-control" id="exampleInputPassword4" placeholder="blood group">
+                            <input type="password" class="form-control" id="blood_group" name="blood_group" placeholder="blood group">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword4">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">conform Password</label>
-                            <input type="text" class="form-control" id="exampleInputName1" placeholder="conform">
+                            <input type="text" class="form-control" id="conform_pass" name="conform_pass" placeholder="conform">
                           </div>
                           <button type="submit" class="btn btn-primary me-2">Submit</button>
                           <button class="btn btn-dark">Cancel</button>
