@@ -4,7 +4,7 @@
 
 ### How  To Install 
 
-#### 1. git clone <repositorylink>
+#### 1. git clone https://github.com/mr-speedster/NewOne.git
 #### 2. cd CS-BUDDY
 #### 3. open terminal or CMD
 #### 4. run php artisan serve
