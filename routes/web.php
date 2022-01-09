@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\AttandanceController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\MyDetailsController;
+use App\Http\Controllers\PhotosController;
+use App\Http\Controllers\TimeTableController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +19,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.eventBoard.eventBoard');
-});
+Route::get('/',[EventController::class,'index'])->name("EventBoard");
+
+Route::get('/announcement',[AnnouncementController::class,'index'])->name("Announcement");
+
+Route::get('/timetable',[TimeTableController::class,'index'])->name("TimeTable");
+
+Route::get('/attandance',[AttandanceController::class,'index'])->name("Attandance");
+
+Route::get('/photos',[PhotosController::class,'index'])->name("Photos");
+
+Route::get('/mydetails',[MyDetailsController::class,'index'])->name("MyDetails");
 
