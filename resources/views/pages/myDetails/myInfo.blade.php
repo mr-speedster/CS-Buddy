@@ -196,6 +196,10 @@
                                 <td>19148CSPRP</td>
                               </tr>
                               <tr>
+                                <td>Address</td>
+                                <td>Red House <br> kayamkulam P.O <br> Alappuzha <br> Kerala <br> 690502</td>
+                              </tr>
+                              <tr>
                                 <td>Blood Group</td>
                                 <td>O+</td>
                               </tr>
