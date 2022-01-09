@@ -184,6 +184,10 @@
                                 <td>08</td>
                               </tr>
                               <tr>
+                                <td>email</td>
+                                <td>ajai@ajai.com</td>
+                              </tr>
+                              <tr>
                                 <td>Semester</td>
                                 <td>5</td>
                               </tr>

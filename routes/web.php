@@ -5,9 +5,11 @@ use App\Http\Controllers\AddressController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\AttandanceController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\LogInController;
 use App\Http\Controllers\MyDetailsController;
 use App\Http\Controllers\MyInfoController;
 use App\Http\Controllers\PhotosController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TimeTableController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,8 +23,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/',[LogInController::class,'index'])->name("LogIn");
 
-Route::get('/',[EventController::class,'index'])->name("EventBoard");
+Route::get('/register',[RegisterController::class,'index'])->name("Register");
+
+Route::get('/eventboard',[EventController::class,'index'])->name("EventBoard");
 
 Route::get('/announcement',[AnnouncementController::class,'index'])->name("Announcement");
 
