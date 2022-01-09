@@ -112,9 +112,9 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html">  MyInfo</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Address </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Academics </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route("MyInfo")}}">  MyInfo</a></li>
+                 
+                <li class="nav-item"> <a class="nav-link" href="{{route("Academics")}}"> Academics </a></li>
               </ul>
             </div>
           </li>

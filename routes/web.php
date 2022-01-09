@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\AcademicsController;
+use App\Http\Controllers\AddressController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\AttandanceController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\MyDetailsController;
+use App\Http\Controllers\MyInfoController;
 use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\TimeTableController;
 use Illuminate\Support\Facades\Route;
@@ -29,5 +32,8 @@ Route::get('/attandance',[AttandanceController::class,'index'])->name("Attandanc
 
 Route::get('/photos',[PhotosController::class,'index'])->name("Photos");
 
-Route::get('/mydetails',[MyDetailsController::class,'index'])->name("MyDetails");
+Route::get('/myinfo',[MyInfoController::class,'index'])->name("MyInfo");
+
+Route::get('/academics',[AcademicsController::class,'index'])->name("Academics");
+
 

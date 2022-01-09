@@ -167,39 +167,44 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-                <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                <div class="col-lg-6 grid-margin stretch-card">
                     <div class="card">
                       <div class="card-body">
-                        <h4 class="card-title">Onam Celibration</h4>
-                        <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
-                          <div class="item">
-                            <img src="assets/images/dashboard/Rectangle.jpg" alt="">
-                          </div>
-                          <div class="item">
-                            <img src="assets/images/dashboard/Img_5.jpg" alt="">
-                          </div>
-                          <div class="item">
-                            <img src="assets/images/dashboard/img_6.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="d-flex py-4">
-                          <div class="preview-list w-100">
-                            <div class="preview-item p-0">
-                              <div class="preview-item-content d-flex flex-grow">
-                                <div class="flex-grow">
-                                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                                    <h6 class="preview-subject">Conducted Club</h6>
-                                    <p class="text-muted text-small">12/05/2022</p>
-                                  </div>
-                                  <p class="text-muted">Something about onam</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <h4 class="card-title">My Info</h4>
+                        </p>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td>Name</td>
+                                <td>Ajai</td>
+                              </tr>
+                              <tr>
+                                <td>Roll.No</td>
+                                <td>08</td>
+                              </tr>
+                              <tr>
+                                <td>Semester</td>
+                                <td>5</td>
+                              </tr>
+                              <tr>
+                                <td>Touter</td>
+                                <td>AGGIE VARGHESE</td>
+                              </tr>
+                              <tr>
+                                <td>Addmission No</td>
+                                <td>19148CSPRP</td>
+                              </tr>
+                              <tr>
+                                <td>Blood Group</td>
+                                <td>O+</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
-                </div>
+                  </div>
             </div>
           </div>
           <!-- content-wrapper ends -->
