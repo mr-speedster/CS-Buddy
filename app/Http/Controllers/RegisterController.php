@@ -23,7 +23,7 @@ class RegisterController extends Controller
      */
     public function create()
     {
-        //
+        return redirect(route('EventBoard'));
     }
 
     /**
