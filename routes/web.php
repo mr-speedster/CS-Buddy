@@ -23,6 +23,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Get Requests
+
 Route::get('/',[LogInController::class,'index'])->name("LogIn");
 
 Route::get('/register',[RegisterController::class,'index'])->name("Register");
@@ -42,3 +44,8 @@ Route::get('/myinfo',[MyInfoController::class,'index'])->name("MyInfo");
 Route::get('/academics',[AcademicsController::class,'index'])->name("Academics");
 
 
+//Post method routes
+
+Route::post('/register',[RegisterController::class,'create'])->name('RegisterAction');
+
+Route::post('/login',[LogInController::class,'create'])->name('LogInAction');
