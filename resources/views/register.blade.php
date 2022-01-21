@@ -32,7 +32,8 @@
                       <div class="card-body m-5">
                         <h2 class="card-title text-danger">CS BUDDY</h2>
                         <p class="card-description"> Create Your Account </p>
-                        <form class="forms-sample">
+                        <form class="forms-sample" method="POST" action="{{route('RegisterAction')}}">
+                          @csrf
                           <div class="form-group">
                             <label for="exampleInputName1">Name</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Name">
