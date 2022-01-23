@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\AddressController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\AttandanceController;
 use App\Http\Controllers\EventController;
@@ -43,9 +44,13 @@ Route::get('/myinfo',[MyInfoController::class,'index'])->name("MyInfo");
 
 Route::get('/academics',[AcademicsController::class,'index'])->name("Academics");
 
+Route::get('/admin/login',[AdminController::class,'index'])->name("AdminLogin");
+
 
 //Post method routes
 
 Route::post('/register',[RegisterController::class,'create'])->name('RegisterAction');
 
 Route::post('/login',[LogInController::class,'create'])->name('LogInAction');
+
+Route::post('/admin/login',[AdminController::class,'create'])->name('AdminLogInAction');
