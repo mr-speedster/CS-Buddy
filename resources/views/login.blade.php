@@ -19,12 +19,16 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
   </head>
   <body>
+    <!--loader-->
+    <!--loader-->
     <!-- partial -->
         <div class="main-panel">
+          <a href="{{route('AdminLogin')}}" style="margin-left: auto;font-weight: 700" class="text-danger me-2">ADMIN</a>
           <div class="content-wrapper">
             <div class="row">
                 <div class="col-md-6 grid-margin stretch-card">
@@ -51,6 +55,7 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
                           </div>
                           <button type="submit" class="btn btn-primary me-2">login</button>
+                          <a class="text-danger" href="{{route('Register')}}">Create New Account</a>
                         </form>
                       </div>
                     </div>
