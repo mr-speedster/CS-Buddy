@@ -82,7 +82,7 @@
                             <input type="text" class="form-control" id="conform_pass" name="conform_pass" placeholder="conform">
                           </div>
                           <button type="submit" class="btn btn-primary me-2">Submit</button>
-                          <button class="btn btn-dark">Cancel</button>
+                          <a class="text-danger" href="{{route('LogIn')}}">Already have an account?</a>
                         </form>
                       </div>
                     </div>
