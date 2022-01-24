@@ -45,7 +45,7 @@
                     <div class="card">
                       <div class="card-body">
                         <h3 class="card-title text-danger">WELCOME CS BUDDY</h3>
-                        <form class="forms-sample" method="POST" action="{{route('LogInAction')}}">
+                        <form class="forms-sample" method="POST" action="{{route('AdminLogInAction')}}">
                           @csrf
                           <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
@@ -56,7 +56,6 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
                           </div>
                           <button type="submit" class="btn btn-primary me-2">login</button>
-                          <a class="text-danger" href="{{route('Register')}}">Create New Account</a>
                         </form>
                       </div>
                     </div>

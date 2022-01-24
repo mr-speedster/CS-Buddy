@@ -13,7 +13,7 @@ class AdminStudentInfoController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.pages.StudentDetails.studentInfo');
     }
 
     /**

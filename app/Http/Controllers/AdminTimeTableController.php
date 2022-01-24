@@ -13,7 +13,7 @@ class AdminTimeTableController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.timeTable.timetable');
     }
 
     /**
