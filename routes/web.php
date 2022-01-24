@@ -2,7 +2,14 @@
 
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\AddressController;
+use App\Http\Controllers\AdminAcademicsController;
+use App\Http\Controllers\AdminAnnouncementController;
+use App\Http\Controllers\AdminAttandanceController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminEventController;
+use App\Http\Controllers\AdminPhotosController;
+use App\Http\Controllers\AdminStudentInfoController;
+use App\Http\Controllers\AdminTimeTableController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\AttandanceController;
 use App\Http\Controllers\EventController;
@@ -26,6 +33,8 @@ use Illuminate\Support\Facades\Route;
 */
 //Get Requests
 
+//Students
+
 Route::get('/',[LogInController::class,'index'])->name("LogIn");
 
 Route::get('/register',[RegisterController::class,'index'])->name("Register");
@@ -44,7 +53,28 @@ Route::get('/myinfo',[MyInfoController::class,'index'])->name("MyInfo");
 
 Route::get('/academics',[AcademicsController::class,'index'])->name("Academics");
 
+
+//Admin
+
+
 Route::get('/admin/login',[AdminController::class,'index'])->name("AdminLogin");
+
+Route::get('/admin/eventboard',[AdminEventController::class,'index'])->name('AdminEvent');
+
+Route::get('/admin/announcement',[AdminAnnouncementController::class,'index'])->name('AdminAnnouncement');
+
+Route::get('/admin/timetable',[AdminTimeTableController::class,'index'])->name('AdminTimeTable');
+
+Route::get('/admin/attandance',[AdminAttandanceController::class,'index'])->name('AdminAttandance');
+
+Route::get('/admin/photos',[AdminPhotosController::class,'index'])->name('AdminPhotos');
+
+Route::get('/admin/studentinfo',[AdminStudentInfoController::class,'index'])->name('AdminStudentInfo');
+
+Route::get('/admin/academics',[AdminAcademicsController::class,'index'])->name('AdminAcademics');
+
+
+
 
 
 //Post method routes

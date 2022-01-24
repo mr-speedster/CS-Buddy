@@ -42,8 +42,8 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Ajai</h5>
-                  <span>S4-CSE</span>
+                  <h5 class="mb-0 font-weight-normal">Admin</h5>
+                  <span>CSE</span>
                 </div>
               </div>
             </div>

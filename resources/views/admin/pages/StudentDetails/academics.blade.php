@@ -26,7 +26,7 @@
     <!--loader-->
     <div id="preloader"></div>
     <!--loader-->
-    <div class="container-scroller" id="main" style="display: none">
+    <div class="container-scroller" id="main" style="display: none"> 
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
@@ -42,8 +42,8 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Ajai</h5>
-                  <span>S4-CSE</span>
+                  <h5 class="mb-0 font-weight-normal">Admin</h5>
+                  <span>CSE</span>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
                   <h6 class="p-3 mb-0">Profile</h6>
                   <div class="dropdown-divider"></div>
-                  <a href="{{route('LogIn')}}" class="dropdown-item preview-item">
+                  <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
@@ -156,37 +156,60 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-md-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div><h2>There is no class in 3rd hour</h2></div>
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-left">
-                        <h6 class="mb-1">AGGIE VARGHESE</h6>
-                        <p class="text-muted mb-0">Date: 07 Jan 2019</p>
-                        <p class="text-muted mb-0">Time: 10:30 AM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div><h2>The 3rd Hour is SHYMA A</h2></div>
-                      <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                        <div class="text-md-center text-xl-left">
-                          <h6 class="mb-1">AGGIE VARGHESE</h6>
-                          <p class="text-muted mb-0">Date: 07 Jan 2019</p>
-                          <p class="text-muted mb-0">Time: 10:30 AM</p>
+                <div class="col-lg-6 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Mark List</h4>
+                        <p class="card-description">Fisrt Series<code>12/12/2021</code>
+                        </p>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>No.</th>
+                                <th>Subject</th>
+                                <th>Mark</th>
+                                <th>Credit</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>FLAT</td>
+                                <td>25</td>
+                                <td>4</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>CN</td>
+                                <td>25</td>
+                                <td>4</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>SS</td>
+                                <td>25</td>
+                                <td>4</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>MSS</td>
+                                <td>25</td>
+                                <td>4</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>MCMP</td>
+                                <td>25</td>
+                                <td>4</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+            </div>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->

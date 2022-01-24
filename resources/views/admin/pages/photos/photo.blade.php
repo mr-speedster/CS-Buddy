@@ -27,6 +27,7 @@
     <div id="preloader"></div>
     <!--loader-->
     <div class="container-scroller" id="main" style="display: none">
+      
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
@@ -42,8 +43,8 @@
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">Ajai</h5>
-                  <span>S4-CSE</span>
+                  <h5 class="mb-0 font-weight-normal">Admin</h5>
+                  <span>CSE</span>
                 </div>
               </div>
             </div>
@@ -134,7 +135,7 @@
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
                   <h6 class="p-3 mb-0">Profile</h6>
                   <div class="dropdown-divider"></div>
-                  <a href="{{route('LogIn')}}" class="dropdown-item preview-item">
+                  <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-dark rounded-circle">
                         <i class="mdi mdi-logout text-danger"></i>
@@ -156,37 +157,40 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-md-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div><h2>There is no class in 3rd hour</h2></div>
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-left">
-                        <h6 class="mb-1">AGGIE VARGHESE</h6>
-                        <p class="text-muted mb-0">Date: 07 Jan 2019</p>
-                        <p class="text-muted mb-0">Time: 10:30 AM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div><h2>The 3rd Hour is SHYMA A</h2></div>
-                      <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                        <div class="text-md-center text-xl-left">
-                          <h6 class="mb-1">AGGIE VARGHESE</h6>
-                          <p class="text-muted mb-0">Date: 07 Jan 2019</p>
-                          <p class="text-muted mb-0">Time: 10:30 AM</p>
+                <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Onam Celibration</h4>
+                        <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel" id="owl-carousel-basic">
+                          <div class="item">
+                            <img src="assets/images/dashboard/Rectangle.jpg" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="assets/images/dashboard/Img_5.jpg" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="assets/images/dashboard/img_6.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="d-flex py-4">
+                          <div class="preview-list w-100">
+                            <div class="preview-item p-0">
+                              <div class="preview-item-content d-flex flex-grow">
+                                <div class="flex-grow">
+                                  <div class="d-flex d-md-block d-xl-flex justify-content-between">
+                                    <h6 class="preview-subject">Conducted Club</h6>
+                                    <p class="text-muted text-small">12/05/2022</p>
+                                  </div>
+                                  <p class="text-muted">Something about onam</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
