@@ -23,7 +23,10 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" />
   </head>
   <body>
-    <div class="container-scroller">  
+    <!--loader-->
+    <div id="preloader"></div>
+    <!--loader-->
+    <div class="container-scroller" id="main">  
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
@@ -213,6 +216,14 @@
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
+    <script type="text/javascript">
+      var loader = document.getElementById("preloader")
+      var body = document.getElementById("main")
+      window.addEventListener("load",function(){
+        loader.style.display = "none";
+        body.style.display = ""
+      })
+    </script>
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->

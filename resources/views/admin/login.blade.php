@@ -19,12 +19,16 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/loader.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="/assets/images/favicon.png" />
   </head>
   <body>
+    <!--loader-->
+    <div id="preloader"></div>
+    <!--loader-->
     <!-- partial -->
-        <div class="main-panel">
+        <div class="main-panel" style="display: none" id="main">
           <a href="{{route('LogIn')}}" style="margin-left: auto;font-weight: 700" class="text-danger me-2">USER</a>
           <div class="content-wrapper">
             <div class="row">
@@ -67,10 +71,14 @@
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
+    <script type="text/javascript">
+      var loader = document.getElementById("preloader")
+      var body = document.getElementById("main")
+      window.addEventListener("load",function(){
+        loader.style.display = "none";
+        body.style.display = ""
+      })
+    </script>
     <!-- plugins:js -->
     <script src="/assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->

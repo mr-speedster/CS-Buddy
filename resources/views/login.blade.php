@@ -25,9 +25,10 @@
   </head>
   <body>
     <!--loader-->
+    <div id="preloader"></div>
     <!--loader-->
     <!-- partial -->
-        <div class="main-panel">
+        <div class="main-panel" style="display: none" id="main">
           <a href="{{route('AdminLogin')}}" style="margin-left: auto;font-weight: 700" class="text-danger me-2">ADMIN</a>
           <div class="content-wrapper">
             <div class="row">
@@ -70,10 +71,14 @@
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
+    <script type="text/javascript">
+      var loader = document.getElementById("preloader")
+      var body = document.getElementById("main")
+      window.addEventListener("load",function(){
+        loader.style.display = "none";
+        body.style.display = ""
+      })
+    </script>
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->

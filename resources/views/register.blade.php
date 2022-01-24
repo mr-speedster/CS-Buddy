@@ -23,8 +23,11 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" />
   </head>
   <body>
+    <!--loader-->
+    <div id="preloader"></div>
+    <!--loader-->
     <!-- partial -->
-        <div class="main-panel">
+        <div class="main-panel" id="main">
           <div class="content-wrapper">
             <div class="row">
                 <div class="col-12 grid-margin stretch-card">
@@ -97,10 +100,15 @@
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
     <!-- container-scroller -->
+    <script type="text/javascript">
+      var loader = document.getElementById("preloader")
+      var body = document.getElementById("main")
+      window.addEventListener("load",function(){
+        loader.style.display = "none";
+        body.style.display = ""
+      })
+    </script>
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
