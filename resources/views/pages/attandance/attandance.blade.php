@@ -26,7 +26,7 @@
     <!--loader-->
     <div id="preloader"></div>
     <!--loader-->
-    <div class="container-scroller" id="main">    
+    <div class="container-scroller" id="main" style="display: none">    
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
