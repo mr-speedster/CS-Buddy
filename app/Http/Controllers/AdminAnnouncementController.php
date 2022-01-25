@@ -13,7 +13,7 @@ class AdminAnnouncementController extends Controller
      */
     public function index()
     {
-        return view('pages.announcement.announcement');
+        return view('admin.pages.announcement.announcement');
     }
 
     /**

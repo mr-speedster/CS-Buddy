@@ -13,7 +13,7 @@ class AdminAttandanceController extends Controller
      */
     public function index()
     {
-        return view('pages.attandance.attandance');
+        return view('admin.pages.attandance.attandance');
     }
 
     /**
