@@ -22,8 +22,8 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex flex-row justify-content-between">
-                      <h4 class="card-title mb-1">Subject Wise Attandance</h4>
-                      <p class="text-muted mb-1">Your current status</p>
+                      <h4 class="card-title mb-1">Future Events</h4>
+                      <p class="text-muted mb-1">Lets Participate</p>
                     </div>
                     <div class="row">
                       <div class="col-12">
