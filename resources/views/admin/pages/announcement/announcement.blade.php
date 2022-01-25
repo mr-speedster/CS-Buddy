@@ -52,7 +52,7 @@
             <span class="nav-link">Navigation</span>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('EventBoard')}}">
+            <a class="nav-link" href="{{route('AdminEvent')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
@@ -60,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('Announcement')}}">
+            <a class="nav-link" href="{{route('AdminAnnouncement')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
@@ -68,7 +68,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('TimeTable')}}">
+            <a class="nav-link" href="{{route('AdminTimeTable')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
               </span>
@@ -76,7 +76,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('Attandance')}}">
+            <a class="nav-link" href="{{route('AdminAttandance')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>
@@ -84,7 +84,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('Photos')}}">
+            <a class="nav-link" href="{{route('AdminPhotos')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
               </span>
@@ -92,7 +92,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <a class="nav-link" data-bs-toggle="collapse" href="" aria-expanded="false" aria-controls="auth">
               <span class="menu-icon">
                 <i class="mdi mdi-security"></i>
               </span>
@@ -101,9 +101,9 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route("MyInfo")}}">  MyInfo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('AdminStudentInfo')}}">  MyInfo</a></li>
                  
-                <li class="nav-item"> <a class="nav-link" href="{{route("Academics")}}"> Academics </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('AdminAcademics')}}"> Academics </a></li>
               </ul>
             </div>
           </li>

@@ -44,7 +44,7 @@
                   <div class="col-md-6 grid-margin stretch-card">
                     <div class="card">
                       <div class="card-body">
-                        <h3 class="card-title text-danger">WELCOME CS BUDDY</h3>
+                        <h3 class="card-title text-danger">WELCOME CS BUDDY ADMIN PANEL</h3>
                         <form class="forms-sample" method="POST" action="{{route('AdminLogInAction')}}">
                           @csrf
                           <div class="form-group">
