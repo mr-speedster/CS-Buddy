@@ -16,7 +16,7 @@ class CreateTimetablesTable extends Migration
         Schema::create('timetables', function (Blueprint $table) {
             $table->id();
             $table->string("day_name",225);
-            $table->integer("hour",25);
+            $table->string("hour",25);
             $table->string("subject",225);
             $table->string("teacher",225);
             $table->string("time",25);
