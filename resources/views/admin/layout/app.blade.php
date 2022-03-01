@@ -68,14 +68,6 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('liveChat')}}">
-              <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
-              </span>
-              <span class="menu-title">Live Chat</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
             <a class="nav-link" href="{{route('AdminTimeTable')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
@@ -99,22 +91,6 @@
               <span class="menu-title">Photos</span>
             </a>
           </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <span class="menu-icon">
-                <i class="mdi mdi-security"></i>
-              </span>
-              <span class="menu-title">My Details</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route('AdminStudentInfo')}}">  MyInfo</a></li>
-                 
-                <li class="nav-item"> <a class="nav-link" href="{{route('AdminAcademics')}}"> Academics </a></li>
-              </ul>
-            </div>
-          </li>
         </ul>
       </nav>
       <!-- partial -->
@@ -136,8 +112,20 @@
                   <div class="navbar-profile">
                     <img class="img-xs rounded-circle" src="/assets/images/faces/face15.jpg" alt="">
                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Ajai</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                   </div>
                 </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a href="{{route('LogIn')}}" class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </li>
               <li class="nav-item dropdown">
                 <a href="{{route('LogIn')}}" class="dropdown-item preview-item">
