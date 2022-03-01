@@ -7,7 +7,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Default form</h4>
-                    <p class="card-description"> Basic form layout </p>
+                     
                     <form class="forms-sample">
                       <div class="form-group">
                         <label for="exampleInputUsername1">Username</label>
