@@ -12,6 +12,7 @@ use App\Http\Controllers\AdminStudentInfoController;
 use App\Http\Controllers\AdminTimeTableController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\AttandanceController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\LogInController;
 use App\Http\Controllers\MyDetailsController;
@@ -53,6 +54,7 @@ Route::get('/myinfo',[MyInfoController::class,'index'])->name("MyInfo");
 
 Route::get('/academics',[AcademicsController::class,'index'])->name("Academics");
 
+Route::get('/livechat',[ChatController::class,'index'])->name("liveChat");
 
 //Admin
 
