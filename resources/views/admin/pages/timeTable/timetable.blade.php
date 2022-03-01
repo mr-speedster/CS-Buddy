@@ -2,314 +2,38 @@
 @section('main_section')
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title"> Time Table </h3>
-            </div>
             <div class="row">
-              <div class="col-lg-12 grid-margin stretch-card">
+              <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Monday</h4>
-                    <p class="card-description"> <code>09:00AM to 04:00PM</code>
-                    </p>
-                    <div class="table-responsive">
-                      <table class="table table-dark">
-                        <thead>
-                          <tr>
-                            <th> Hour </th>
-                            <th> Subject </th>
-                            <th> Teacher </th>
-                            <th> Time </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td> 1 </td>
-                            <td> Disaster Managemeent </td>
-                            <td> REMYA KRISHNAN R </td>
-                            <td> <code>09:00AM to 10:00PM</code> </td>
-                          </tr>
-                          <tr>
-                            <td> 2 </td>
-                            <td> Micro Processor And Micro Controller </td>
-                            <td> SOUMYA S </td>
-                            <td> <code>10:00AM to 11:00PM</code> </td>
-                          </tr>
-                          <tr>
-                            <td> 3 </td>
-                            <td> System Software </td>
-                            <td> SURYANATH RS </td>
-                            <td> <code>11:00AM to 12:00PM</code></td>
-                          </tr>
-                          <tr>
-                            <td> 4 </td>
-                            <td> FLAT </td>
-                            <td> DEEPA AB </td>
-                            <td> <code>01:00AM to 02:00PM</code> </td>
-                          </tr>
-                          <tr>
-                            <td> 5 </td>
-                            <td> Computer Network </td>
-                            <td> SHYMA A </td>
-                            <td> <code>02:00AM to 03:00PM</code> </td>
-                          </tr>
-                          <tr>
-                            <td> 6 </td>
-                            <td> Management Of Software System </td>
-                            <td> AGGIE VARGHESE </td>
-                            <td> <code>03:00AM to 04:00PM</code> </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description"> Basic form layout </p>
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="exampleInputUsername1">Username</label>
+                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputConfirmPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn btn-primary me-2">Submit</button>
+                      <button class="btn btn-dark">Cancel</button>
+                    </form>
                   </div>
                 </div>
               </div>
+            
             </div>
-            <div class="row">
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">Tuesday</h4>
-                      <p class="card-description"> <code>09:00AM to 04:00PM</code>
-                      </p>
-                      <div class="table-responsive">
-                        <table class="table table-dark">
-                          <thead>
-                            <tr>
-                              <th> Hour </th>
-                              <th> Subject </th>
-                              <th> Teacher </th>
-                              <th> Time </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> 1 </td>
-                              <td> Disaster Managemeent </td>
-                              <td> REMYA KRISHNAN R </td>
-                              <td> <code>09:00AM to 10:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 2 </td>
-                              <td> Micro Processor And Micro Controller </td>
-                              <td> SOUMYA S </td>
-                              <td> <code>10:00AM to 11:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 3 </td>
-                              <td> System Software </td>
-                              <td> SURYANATH RS </td>
-                              <td> <code>11:00AM to 12:00PM</code></td>
-                            </tr>
-                            <tr>
-                              <td> 4 </td>
-                              <td> FLAT </td>
-                              <td> DEEPA AB </td>
-                              <td> <code>01:00AM to 02:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 5 </td>
-                              <td> Computer Network </td>
-                              <td> SHYMA A </td>
-                              <td> <code>02:00AM to 03:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 6 </td>
-                              <td> Management Of Software System </td>
-                              <td> AGGIE VARGHESE </td>
-                              <td> <code>03:00AM to 04:00PM</code> </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">WednesDay</h4>
-                      <p class="card-description"> <code>09:00AM to 04:00PM</code>
-                      </p>
-                      <div class="table-responsive">
-                        <table class="table table-dark">
-                          <thead>
-                            <tr>
-                              <th> Hour </th>
-                              <th> Subject </th>
-                              <th> Teacher </th>
-                              <th> Time </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> 1 </td>
-                              <td> Disaster Managemeent </td>
-                              <td> REMYA KRISHNAN R </td>
-                              <td> <code>09:00AM to 10:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 2 </td>
-                              <td> Micro Processor And Micro Controller </td>
-                              <td> SOUMYA S </td>
-                              <td> <code>10:00AM to 11:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 3 </td>
-                              <td> System Software </td>
-                              <td> SURYANATH RS </td>
-                              <td> <code>11:00AM to 12:00PM</code></td>
-                            </tr>
-                            <tr>
-                              <td> 4 </td>
-                              <td> FLAT </td>
-                              <td> DEEPA AB </td>
-                              <td> <code>01:00AM to 02:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 5 </td>
-                              <td> Computer Network </td>
-                              <td> SHYMA A </td>
-                              <td> <code>02:00AM to 03:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 6 </td>
-                              <td> Management Of Software System </td>
-                              <td> AGGIE VARGHESE </td>
-                              <td> <code>03:00AM to 04:00PM</code> </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">ThursDay</h4>
-                      <p class="card-description"> <code>09:00AM to 04:00PM</code>
-                      </p>
-                      <div class="table-responsive">
-                        <table class="table table-dark">
-                          <thead>
-                            <tr>
-                              <th> Hour </th>
-                              <th> Subject </th>
-                              <th> Teacher </th>
-                              <th> Time </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> 1 </td>
-                              <td> Disaster Managemeent </td>
-                              <td> REMYA KRISHNAN R </td>
-                              <td> <code>09:00AM to 10:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 2 </td>
-                              <td> Micro Processor And Micro Controller </td>
-                              <td> SOUMYA S </td>
-                              <td> <code>10:00AM to 11:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 3 </td>
-                              <td> System Software </td>
-                              <td> SURYANATH RS </td>
-                              <td> <code>11:00AM to 12:00PM</code></td>
-                            </tr>
-                            <tr>
-                              <td> 4 </td>
-                              <td> FLAT </td>
-                              <td> DEEPA AB </td>
-                              <td> <code>01:00AM to 02:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 5 </td>
-                              <td> Computer Network </td>
-                              <td> SHYMA A </td>
-                              <td> <code>02:00AM to 03:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 6 </td>
-                              <td> Management Of Software System </td>
-                              <td> AGGIE VARGHESE </td>
-                              <td> <code>03:00AM to 04:00PM</code> </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">FriDay</h4>
-                      <p class="card-description"> <code>09:00AM to 04:00PM</code>
-                      </p>
-                      <div class="table-responsive">
-                        <table class="table table-dark">
-                          <thead>
-                            <tr>
-                              <th> Hour </th>
-                              <th> Subject </th>
-                              <th> Teacher </th>
-                              <th> Time </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> 1 </td>
-                              <td> Disaster Managemeent </td>
-                              <td> REMYA KRISHNAN R </td>
-                              <td> <code>09:00AM to 10:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 2 </td>
-                              <td> Micro Processor And Micro Controller </td>
-                              <td> SOUMYA S </td>
-                              <td> <code>10:00AM to 11:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 3 </td>
-                              <td> System Software </td>
-                              <td> SURYANATH RS </td>
-                              <td> <code>11:00AM to 12:00PM</code></td>
-                            </tr>
-                            <tr>
-                              <td> 4 </td>
-                              <td> FLAT </td>
-                              <td> DEEPA AB </td>
-                              <td> <code>01:00AM to 02:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 5 </td>
-                              <td> Computer Network </td>
-                              <td> SHYMA A </td>
-                              <td> <code>02:00AM to 03:00PM</code> </td>
-                            </tr>
-                            <tr>
-                              <td> 6 </td>
-                              <td> Management Of Software System </td>
-                              <td> AGGIE VARGHESE </td>
-                              <td> <code>03:00AM to 04:00PM</code> </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
           </div>
+        </div>
           <!-- content-wrapper ends -->
 @endsection

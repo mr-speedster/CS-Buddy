@@ -6,34 +6,34 @@
               <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <div><h2>There is no class in 3rd hour</h2></div>
-                    <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                      <div class="text-md-center text-xl-left">
-                        <h6 class="mb-1">AGGIE VARGHESE</h6>
-                        <p class="text-muted mb-0">Date: 07 Jan 2019</p>
-                        <p class="text-muted mb-0">Time: 10:30 AM</p>
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description"> Basic form layout </p>
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="exampleInputUsername1">Username</label>
+                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
                       </div>
-                    </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputConfirmPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn btn-primary me-2">Submit</button>
+                      <button class="btn btn-dark">Cancel</button>
+                    </form>
                   </div>
                 </div>
               </div>
+            
             </div>
-            <div class="row">
-                <div class="col-md-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div><h2>The 3rd Hour is SHYMA A</h2></div>
-                      <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
-                        <div class="text-md-center text-xl-left">
-                          <h6 class="mb-1">AGGIE VARGHESE</h6>
-                          <p class="text-muted mb-0">Date: 07 Jan 2019</p>
-                          <p class="text-muted mb-0">Time: 10:30 AM</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
           </div>
+        </div>
           <!-- content-wrapper ends -->
 @endsection

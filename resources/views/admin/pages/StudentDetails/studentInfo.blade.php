@@ -3,53 +3,37 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-                <div class="col-lg-6 grid-margin stretch-card">
-                    <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">My Info</h4>
-                        </p>
-                        <div class="table-responsive">
-                          <table class="table">
-                            <tbody>
-                              <tr>
-                                <td>Name</td>
-                                <td>Ajai</td>
-                              </tr>
-                              <tr>
-                                <td>Roll.No</td>
-                                <td>08</td>
-                              </tr>
-                              <tr>
-                                <td>email</td>
-                                <td>ajai@ajai.com</td>
-                              </tr>
-                              <tr>
-                                <td>Semester</td>
-                                <td>5</td>
-                              </tr>
-                              <tr>
-                                <td>Touter</td>
-                                <td>AGGIE VARGHESE</td>
-                              </tr>
-                              <tr>
-                                <td>Addmission No</td>
-                                <td>19148CSPRP</td>
-                              </tr>
-                              <tr>
-                                <td>Address</td>
-                                <td>Red House <br> kayamkulam P.O <br> Alappuzha <br> Kerala <br> 690502</td>
-                              </tr>
-                              <tr>
-                                <td>Blood Group</td>
-                                <td>O+</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description"> Basic form layout </p>
+                    <form class="forms-sample">
+                      <div class="form-group">
+                        <label for="exampleInputUsername1">Username</label>
+                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
                       </div>
-                    </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputConfirmPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn btn-primary me-2">Submit</button>
+                      <button class="btn btn-dark">Cancel</button>
+                    </form>
                   </div>
+                </div>
+              </div>
+            
             </div>
           </div>
+        </div>
           <!-- content-wrapper ends -->
 @endsection
