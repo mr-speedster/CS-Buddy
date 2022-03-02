@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 
 class LogInController extends Controller
@@ -21,9 +22,12 @@ class LogInController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        return redirect(route('EventBoard'));
+        $email = $request->post('email');
+        $pass = $request->post('password');
+        dd($email);
+        //return redirect(route('EventBoard'));
     }
 
     /**
