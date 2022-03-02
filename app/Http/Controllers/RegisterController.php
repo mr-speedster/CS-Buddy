@@ -21,8 +21,18 @@ class RegisterController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
+        $name = $request->post('name');
+        $roll_no = $request->post('roll_no');
+        $sem = $request->post('sem');
+        $touter = $request->post('touter');
+        $admission_no = $request->post('admission_no');
+        $email = $request->post('email');
+        $address = $request->post('address');
+        $gender = $request->post('gender');
+        $blood = $request->post('blood_group');
+        $password = $request->post('password');
         return redirect(route('EventBoard'));
     }
 

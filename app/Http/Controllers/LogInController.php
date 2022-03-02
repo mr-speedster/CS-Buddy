@@ -26,8 +26,7 @@ class LogInController extends Controller
     {
         $email = $request->post('email');
         $pass = $request->post('password');
-        dd($email);
-        //return redirect(route('EventBoard'));
+        return redirect(route('EventBoard'));
     }
 
     /**
