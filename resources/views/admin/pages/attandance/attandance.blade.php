@@ -8,7 +8,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Attendance</h4>
                      
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="" method="POST">
                       <div class="form-group">
                         <label for="exampleInputUsername1">Subject</label>
                         <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Subject">
