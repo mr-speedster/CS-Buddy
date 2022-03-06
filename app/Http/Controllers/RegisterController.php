@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 
 class RegisterController extends Controller
@@ -33,6 +34,19 @@ class RegisterController extends Controller
         $gender = $request->post('gender');
         $blood = $request->post('blood_group');
         $password = $request->post('password');
+
+        $validate = $request->validate([
+            'user_name' => 'min:2 | max:100',
+            'user_pass' => 'min:8 | max:100',
+        ]);
+
+        if ($request->post('user_pass') !== $request->post('conform_pass')) {
+            return redirect('/user/signup')->withErrors('Password not match!');
+        }
+
+        $user = new User();
+        
+
         return redirect(route('EventBoard'));
     }
 
