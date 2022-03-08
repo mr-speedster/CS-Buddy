@@ -15,6 +15,10 @@ class CreateAttendancesTable extends Migration
     {
         Schema::create('attendances', function (Blueprint $table) {
             $table->id();
+            $table->string("subject",225);
+            $table->string("teacher",225);
+            $table->string("date",25);
+            $table->string("time",25);
             $table->timestamps();
         });
     }

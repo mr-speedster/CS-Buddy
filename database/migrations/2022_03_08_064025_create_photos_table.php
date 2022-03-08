@@ -15,6 +15,11 @@ class CreatePhotosTable extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
+            $table->string("cdn_link",225);
+            $table->string("celibration_name",225);
+            $table->string("club_name",225);
+            $table->string("date",25);
+            $table->string("msg",225);
             $table->timestamps();
         });
     }
