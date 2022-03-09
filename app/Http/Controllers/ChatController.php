@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\App;
 use App\Models\CsUser;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use App\Events\Message;
+
 
 class ChatController extends Controller
 {
@@ -25,9 +28,14 @@ class ChatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        event(
+            new Message(
+                $request->input('username'),
+                $request->input('message')
+            )
+        );
     }
 
     /**

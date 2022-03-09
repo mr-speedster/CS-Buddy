@@ -21,6 +21,7 @@ use App\Http\Controllers\PhotosController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TimeTableController;
 use Illuminate\Support\Facades\Route;
+use App\Events\Message;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,3 +98,5 @@ Route::post('/timetable',[AdminTimeTableController::class,'create'])->name('Time
 Route::post('/attendance',[AdminAttandanceController::class,'create'])->name('AttendanceAction');
 
 Route::post('/photos',[AdminPhotosController::class,'create'])->name('PhotosAction');
+
+Route::post('/livechat',[ChatController::class,'create'])->name("liveChatAction");
