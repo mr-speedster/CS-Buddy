@@ -15,7 +15,7 @@ class AttandanceController extends Controller
     {
         $email = session('email');
         $user = CsUser::where('email',$email)->firstOrFail();
-        return view('pages.attandance.attandance');
+        return view('pages.attandance.attandance',['user'=>$user]);
     }
 
     /**

@@ -52,7 +52,7 @@
             <span class="nav-link">Navigation</span>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('AdminEvent')}}">
+            <a class="nav-link" href="{{route('EventBoard')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
@@ -60,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('AdminAnnouncement')}}">
+            <a class="nav-link" href="{{route('Announcement')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-playlist-play"></i>
               </span>
@@ -70,13 +70,16 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{route('liveChat')}}">
               <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="24" height="24"
+                  viewBox="0 0 172 172"
+                  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#db0000"><path d="M28.66667,21.5c-7.88333,0 -14.33333,6.45 -14.33333,14.33333v86l21.5,-21.5h64.5c7.88333,0 14.33333,-6.45 14.33333,-14.33333v-50.16667c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333zM129,57.33333v28.66667c0,15.80967 -12.857,28.66667 -28.66667,28.66667h-43v7.16667c0,7.88333 6.45,14.33333 14.33333,14.33333h64.5l21.5,21.5v-86c0,-7.88333 -6.45,-14.33333 -14.33333,-14.33333z"></path></g></g></svg>
               </span>
               <span class="menu-title">Live Chat</span>
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('AdminTimeTable')}}">
+            <a class="nav-link" href="{{route('TimeTable')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-table-large"></i>
               </span>
@@ -84,7 +87,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('AdminAttandance')}}">
+            <a class="nav-link" href="{{route('Attandance')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>
@@ -92,7 +95,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{route('AdminPhotos')}}">
+            <a class="nav-link" href="{{route('Photos')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
               </span>
@@ -109,9 +112,9 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{route('AdminStudentInfo')}}">  MyInfo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('MyInfo')}}">  MyInfo</a></li>
                  
-                <li class="nav-item"> <a class="nav-link" href="{{route('AdminAcademics')}}"> Academics </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('Academics')}}"> Academics </a></li>
               </ul>
             </div>
           </li>
@@ -135,7 +138,7 @@
                 <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown">
                   <div class="navbar-profile">
                     <img class="img-xs rounded-circle" src="/assets/images/faces/face15.jpg" alt="">
-                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Ajai</p>
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">{{$name}}</p>
                   </div>
                 </a>
               </li>

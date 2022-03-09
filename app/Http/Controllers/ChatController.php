@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
+use App\Models\CsUser;
 use Illuminate\Http\Request;
 
 class ChatController extends Controller
@@ -13,7 +15,9 @@ class ChatController extends Controller
      */
     public function index()
     {
-        return view('pages.livechat.livechat');
+        $email = session('email');
+        $user = CsUser::where('email',$email)->firstOrFail();
+        return view('pages.livechat.livechat',['user'=>$user]);
     }
 
     /**

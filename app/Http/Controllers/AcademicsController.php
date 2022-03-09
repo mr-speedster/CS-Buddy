@@ -15,7 +15,7 @@ class AcademicsController extends Controller
     {
         $email = session('email');
         $user = CsUser::where('email',$email)->firstOrFail();
-        return view("pages.myDetails.academics");
+        return view("pages.myDetails.academics",['user'=>$user]);
     }
 
     /**

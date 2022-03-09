@@ -13,35 +13,35 @@
                             <tbody>
                               <tr>
                                 <td>Name</td>
-                                <td>Ajai</td>
+                                <td>{{$user['user_name']}}</td>
                               </tr>
                               <tr>
                                 <td>Roll.No</td>
-                                <td>08</td>
+                                <td>{{$user['roll_no']}}</td>
                               </tr>
                               <tr>
                                 <td>email</td>
-                                <td>ajai@ajai.com</td>
+                                <td>{{$user['email']}}</td>
                               </tr>
                               <tr>
                                 <td>Semester</td>
-                                <td>5</td>
+                                <td>{{$user['sem']}}</td>
                               </tr>
                               <tr>
                                 <td>Touter</td>
-                                <td>AGGIE VARGHESE</td>
+                                <td>{{$user['touter']}}</td>
                               </tr>
                               <tr>
-                                <td>Addmission No</td>
-                                <td>19148CSPRP</td>
+                                <td>Admission No</td>
+                                <td>{{$user['addmisson_no']}}</td>
                               </tr>
                               <tr>
                                 <td>Address</td>
-                                <td>Red House <br> kayamkulam P.O <br> Alappuzha <br> Kerala <br> 690502</td>
+                                <td><?=str_replace(',', '<br/>', $user['address'])?></td>
                               </tr>
                               <tr>
                                 <td>Blood Group</td>
-                                <td>O+</td>
+                                <td>{{$user['blood']}}</td>
                               </tr>
                             </tbody>
                           </table>
