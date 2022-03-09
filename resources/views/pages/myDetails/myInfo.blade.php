@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.app',['name'=>$user['user_name']])
 @section('main_section')
         <div class="main-panel">
           <div class="content-wrapper">
