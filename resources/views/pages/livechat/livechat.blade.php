@@ -245,7 +245,12 @@
                   <div class="card-body">
                     <h4 class="card-title" style="color: red">Let's Chat</h4>
                       <div id="messages" class="scroller">
-
+                        @foreach ($chats as $chat)
+                          <div class="message">
+                            <strong>{{$chat->msg}}</strong><br>
+                            <span style="font-size: 15px;color: rgb(0, 60, 255)">{{$chat->username}}</span>
+                          </div>
+                        @endforeach
                       </div>       
                       <form id="message_form">
                       <div class="form-group">

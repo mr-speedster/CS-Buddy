@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\CsUser;
+use App\Models\TimeTable;
 use Illuminate\Http\Request;
 
 class TimeTableController extends Controller
@@ -15,7 +16,9 @@ class TimeTableController extends Controller
     {
         $email = session('email');
         $user = CsUser::where('email',$email)->firstOrFail();
-        return view('pages.timeTable.timetable',['user'=>$user]);
+        $table = TimeTable::all();
+        //dd($table->first()->day_name);
+        return view('pages.timeTable.timetable',['user'=>$user,'tables'=>$table]);
     }
 
     /**

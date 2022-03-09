@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CsUser;
+use App\Models\Photos;
+
 class PhotosController extends Controller
 {
     /**
@@ -15,7 +17,8 @@ class PhotosController extends Controller
     {
         $email = session('email');
         $user = CsUser::where('email',$email)->firstOrFail();
-        return view('pages.photos.photo',['user'=>$user]);
+        $photos = Photos::all();
+        return view('pages.photos.photo',['user'=>$user,'photos'=>$photos]);
     }
 
     /**

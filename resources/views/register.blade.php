@@ -82,7 +82,7 @@
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">conform Password</label>
-                            <input type="text" class="form-control" id="conform_pass" name="conform_pass" placeholder="conform">
+                            <input type="password" class="form-control" id="conform_pass" name="conform_pass" placeholder="conform">
                           </div>
                           <button type="submit" class="btn btn-primary me-2">Submit</button>
                           <a class="text-danger" href="{{route('LogIn')}}">Already have an account?</a>
