@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Academics;
 use Illuminate\Http\Request;
 
 class AdminAcademicsController extends Controller
@@ -21,9 +22,28 @@ class AdminAcademicsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'exam_name' => 'required',
+            'date' => 'required',
+            'no' => 'required',
+            'subject' => 'required',
+            'mark' => 'required',
+            'credit' => 'required',
+        ]);
+        if ($validate == null) {
+            return redirect(route('AdminAcademics'))->withErrors('failed');
+        }else{
+            $student = new Academics();
+            $student->exam_name = $request->post('exam_name');
+            $student->date = $request->post('date');
+            $student->no = $request->post('no');
+            $student->subject = $request->post('subject');
+            $student->mark = $request->post('mark');
+            $student->credit = $request->post('credit');
+            return redirect(route('AdminAcademics'))->with('success','done');
+        }
     }
 
     /**

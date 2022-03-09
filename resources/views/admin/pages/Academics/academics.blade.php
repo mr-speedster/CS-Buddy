@@ -10,20 +10,28 @@
                      
                     <form class="forms-sample" action="" method="POST">
                       <div class="form-group">
-                        <label for="exampleInputUsername1">Subject</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Subject">
+                        <label for="exampleInputUsername1">Exam Name</label>
+                        <input type="text" class="form-control" name="exam_name" id="exampleInputUsername1" placeholder="eg: Series 1">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Teacher</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Teacher">
+                        <label for="exampleInputEmail1">Date</label>
+                        <input type="text" class="form-control" name="date" id="exampleInputEmail1" placeholder="Teacher">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Date</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Date">
+                        <label for="exampleInputConfirmPassword1">Order Number</label>
+                        <input type="number" class="form-control" name="no" id="exampleInputConfirmPassword1" placeholder="Current Time">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputConfirmPassword1">Time</label>
-                        <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Current Time">
+                        <label for="exampleInputPassword1">Subject</label>
+                        <input type="text" class="form-control" name="subject" id="exampleInputPassword1" placeholder="Date">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputConfirmPassword1">Mark</label>
+                        <input type="number" class="form-control" name="mark" id="exampleInputConfirmPassword1" placeholder="Current Time">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputConfirmPassword1">credit</label>
+                        <input type="number" class="form-control" name="credit" id="exampleInputConfirmPassword1" placeholder="Current Time">
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Submit</button>
                       @if (\Session::has('success'))
