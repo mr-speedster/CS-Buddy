@@ -38,6 +38,7 @@ class AdminAnnouncementController extends Controller
             $announce->updator_name = $request->post('updator_name');
             $announce->date = $request->post('date');
             $announce->time = $request->post('time');
+            $announce->save();
             return redirect(route('AdminAnnouncement'))->with('success','done');
         }
     }

@@ -42,6 +42,7 @@ class AdminAcademicsController extends Controller
             $student->subject = $request->post('subject');
             $student->mark = $request->post('mark');
             $student->credit = $request->post('credit');
+            $student->save();
             return redirect(route('AdminAcademics'))->with('success','done');
         }
     }

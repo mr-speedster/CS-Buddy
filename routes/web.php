@@ -90,3 +90,4 @@ Route::post('/event',[AdminEventController::class,'create'])->name('EventAction'
 
 Route::post('/announcement',[AdminAnnouncementController::class,'create'])->name('AnnouncementAction');
 
+Route::post('/academics',[AdminAcademicsController::class,'create'])->name('AcademicsAction');
