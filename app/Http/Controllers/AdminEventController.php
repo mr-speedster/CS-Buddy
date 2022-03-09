@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class AdminEventController extends Controller
@@ -21,9 +22,25 @@ class AdminEventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'event_name' => 'required | min:1',
+            'logo_cdn' => 'required',
+            'date' => 'required',
+            'time' => 'required',
+        ]);
+        if($validate == null){
+            return redirect(route('AdminEvent'))->withErrors('failed');
+        }else{
+            $event = new Event();
+            $event->event_name = $request->post('event_name');
+            $event->event_logo = $request->post('logo_cdn'); 
+            $event->date = $request->post('date');
+            $event->time = $request->post('time');
+            $event->save();
+            return redirect(route('AdminEvent'))->with('success','done');
+        }
     }
 
     /**
@@ -32,7 +49,7 @@ class AdminEventController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
         //
     }
