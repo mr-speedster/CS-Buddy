@@ -38,7 +38,7 @@ class LogInController extends Controller
         if ($user_validate == 1) {
             return redirect(route('EventBoard'));
         }else{
-            return redirect(route('LogIn'))->withErrors('Something Want wrong,Try Again');
+            return redirect(route('LogIn'))->withErrors('Check your mail or Password');
         }
     }
 

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/loader.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <!--loader-->
@@ -29,7 +30,7 @@
     <!--loader-->
     <!-- partial -->
         <div class="main-panel" style="display: none" id="main">
-          <a href="{{route('AdminLogin')}}" style="margin-left: auto;font-weight: 700" class="text-danger me-2">ADMIN</a>
+          <a href="{{route('AdminLogin')}}" style="margin-left: auto;font-weight: 700" class="text-danger me-2">Are you a Admin ?</a>
           <div class="content-wrapper">
             <div class="row">
                 <div class="col-md-6 grid-margin stretch-card">
@@ -49,14 +50,22 @@
                           @csrf
                           <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required/>
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                            <input  type="password" class="form-control" id="Password" placeholder="Password" name="password" required/>
                           </div>
-                          <button type="submit" class="btn btn-primary me-2">login</button>
+                          <button type="submit" class="btn btn-primary me-2" onclick="FieldCheck()">login</button>
                           <a class="text-danger" href="{{route('Register')}}">Create New Account</a>
+                          @if ($errors->any())
+                            <script type="text/javascript">
+                              Swal.fire({
+                                  icon: 'error',
+                                  text: 'Check your email or pasword',
+                                })
+                            </script>
+                          @endif
                         </form>
                       </div>
                     </div>
