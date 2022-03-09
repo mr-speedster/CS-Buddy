@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TimeTable;
 use Illuminate\Http\Request;
 
 class AdminTimeTableController extends Controller
@@ -22,9 +23,27 @@ class AdminTimeTableController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'day_name' => 'required',
+            'hour' => 'required',
+            'subject' => 'required',
+            'teacher' => 'required',
+            'time' => 'required',
+        ]);
+        if($validate == null){
+            return redirect(route('AdminTimeTable'))->withErrors('failed');
+        }else{
+            $table = new TimeTable();
+            $table->day_name = $request->post('day_name');
+            $table->hour = $request->post('hour');
+            $table->subject = $request->post('subject');
+            $table->teacher = $request->post('teacher');
+            $table->time = $request->post('time');
+            $table->save();
+            return redirect(route('AdminTimeTable'))->with('success','done');
+        }
     }
 
     /**

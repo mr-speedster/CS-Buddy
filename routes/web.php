@@ -91,3 +91,9 @@ Route::post('/event',[AdminEventController::class,'create'])->name('EventAction'
 Route::post('/announcement',[AdminAnnouncementController::class,'create'])->name('AnnouncementAction');
 
 Route::post('/academics',[AdminAcademicsController::class,'create'])->name('AcademicsAction');
+
+Route::post('/timetable',[AdminTimeTableController::class,'create'])->name('TimeTableAction');
+
+Route::post('/attendance',[AdminAttandanceController::class,'create'])->name('AttendanceAction');
+
+Route::post('/photos',[AdminAttandanceController::class,'create'])->name('PhotosAction');
