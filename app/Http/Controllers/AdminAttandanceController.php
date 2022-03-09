@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Attendance;
 use Illuminate\Http\Request;
 
 class AdminAttandanceController extends Controller
@@ -21,9 +22,25 @@ class AdminAttandanceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'subject' => 'required',
+            'teacher' => 'required',
+            'date' => 'required',
+            'time' => 'required',
+        ]);
+        if($validate == null){
+            return redirect(route('AdminAttandance'))->withErrors('failed');
+        }else{
+            $attendance = new Attendance();
+            $attendance->subject = $request->post('subject');
+            $attendance->teacher = $request->post('teacher');
+            $attendance->date = $request->post('date');
+            $attendance->time = $request->post('time');
+            $attendance->save();
+            return redirect(route('AdminAttandance'))->with('success','done');
+        }
     }
 
     /**

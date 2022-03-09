@@ -8,22 +8,23 @@
                   <div class="card-body">
                     <h4 class="card-title">Attendance</h4>
                      
-                    <form class="forms-sample" action="" method="POST">
+                    <form class="forms-sample" action="{{route('AttendanceAction')}}" method="POST">
+                      @csrf
                       <div class="form-group">
                         <label for="exampleInputUsername1">Subject</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Subject">
+                        <input type="text" class="form-control" name="subject" id="exampleInputUsername1" placeholder="Subject">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Teacher</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Teacher">
+                        <input type="text" class="form-control" name="teacher" id="exampleInputEmail1" placeholder="Teacher">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword1">Date</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Date">
+                        <input type="text" class="form-control" name="date"  id="exampleInputPassword1" placeholder="Date">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputConfirmPassword1">Time</label>
-                        <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Current Time">
+                        <input type="text" class="form-control" name="time" id="exampleInputConfirmPassword1" placeholder="Current Time">
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Submit</button>
                       @if (\Session::has('success'))
@@ -33,14 +34,14 @@
                             text: 'Successfully Added',
                         })
                       </script>
-                    @elseif ($errors->any())
+                      @elseif ($errors->any())
                         <script type="text/javascript">
                           Swal.fire({
                               icon: 'error',
                               text: 'Something Went Wrong!',
                           })
                       </script>
-                    @endif
+                      @endif
                     </form>
                   </div>
                 </div>
