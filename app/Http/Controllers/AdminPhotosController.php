@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Photos;
 use Illuminate\Http\Request;
 
 class AdminPhotosController extends Controller
@@ -21,9 +22,27 @@ class AdminPhotosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'cdn_link' => 'required',
+            'celibration_name' => 'required',
+            'club_name' => 'required',
+            'date' => 'required',
+            'msg' => 'required',
+        ]);
+        if($validate == null){
+            return redirect(route('AdminPhotos'))->withErrors('failed');
+        }else{
+            $photo = new Photos();
+            $photo->cdn_link = $request->post('cdn_link');
+            $photo->celibration_name = $request->post('celibration_name');
+            $photo->club_name = $request->post('club_name');
+            $photo->date = $request->post('date');
+            $photo->msg = $request->post('msg');
+            $photo->save();
+            return redirect(route('AdminPhotos'))->with('success','done');
+        }
     }
 
     /**

@@ -96,4 +96,4 @@ Route::post('/timetable',[AdminTimeTableController::class,'create'])->name('Time
 
 Route::post('/attendance',[AdminAttandanceController::class,'create'])->name('AttendanceAction');
 
-Route::post('/photos',[AdminAttandanceController::class,'create'])->name('PhotosAction');
+Route::post('/photos',[AdminPhotosController::class,'create'])->name('PhotosAction');
