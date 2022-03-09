@@ -8,5 +8,5 @@
 #### 2. cd CS-BUDDY
 #### 3. open terminal or CMD
 #### 4. run 'composer install && npm install'
-#### 4. run php artisan serve
-#### 5.open browser http://localhost:8000
+#### 5. run php artisan serve
+#### 6.open browser http://localhost:8000
