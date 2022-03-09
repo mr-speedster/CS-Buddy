@@ -29,6 +29,8 @@ class AdminAttandanceController extends Controller
             'teacher' => 'required',
             'date' => 'required',
             'time' => 'required',
+            'code' => 'required',
+            'percent' => 'required',
         ]);
         if($validate == null){
             return redirect(route('AdminAttandance'))->withErrors('failed');
@@ -38,6 +40,8 @@ class AdminAttandanceController extends Controller
             $attendance->teacher = $request->post('teacher');
             $attendance->date = $request->post('date');
             $attendance->time = $request->post('time');
+            $attendance->code = $request->post('code');
+            $attendance->percent = $request->post('percent');
             $attendance->save();
             return redirect(route('AdminAttandance'))->with('success','done');
         }

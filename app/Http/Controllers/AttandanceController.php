@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Attendance;
 use Illuminate\Http\Request;
 use App\Models\CsUser;
 class AttandanceController extends Controller
@@ -15,7 +16,8 @@ class AttandanceController extends Controller
     {
         $email = session('email');
         $user = CsUser::where('email',$email)->firstOrFail();
-        return view('pages.attandance.attandance',['user'=>$user]);
+        $attend = Attendance::all();
+        return view('pages.attandance.attandance',['user'=>$user,'attends'=>$attend]);
     }
 
     /**

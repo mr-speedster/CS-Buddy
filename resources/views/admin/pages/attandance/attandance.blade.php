@@ -15,8 +15,16 @@
                         <input type="text" class="form-control" name="subject" id="exampleInputUsername1" placeholder="Subject">
                       </div>
                       <div class="form-group">
+                        <label for="exampleInputUsername1">Code</label>
+                        <input type="text" class="form-control" name="code" id="exampleInputUsername1" placeholder="Subject code">
+                      </div>
+                      <div class="form-group">
                         <label for="exampleInputEmail1">Teacher</label>
                         <input type="text" class="form-control" name="teacher" id="exampleInputEmail1" placeholder="Teacher">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Attendance Percentage </label>
+                        <input type="text" class="form-control" name="percent" id="exampleInputEmail1" placeholder="eg: 97">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword1">Date</label>
