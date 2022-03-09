@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 
 class AdminAnnouncementController extends Controller
@@ -21,9 +22,24 @@ class AdminAnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'message' => 'required',
+            'updator_name' => 'required',
+            'date' => 'required',
+            'time' => 'required',
+        ]);
+        if($validate == null){
+            return redirect(route('AdminAnnouncement'))->withErrors('failed');
+        }else{
+            $announce = new Announcement();
+            $announce->msg = $request->post('message');
+            $announce->updator_name = $request->post('updator_name');
+            $announce->date = $request->post('date');
+            $announce->time = $request->post('time');
+            return redirect(route('AdminAnnouncement'))->with('success','done');
+        }
     }
 
     /**

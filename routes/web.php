@@ -80,12 +80,13 @@ Route::get('/admin/academics',[AdminAcademicsController::class,'index'])->name('
 
 
 //Post method routes
-Route::post('/event',[AdminEventController::class,'create'])->name('EventAction');
-
-Route::post('/announcement',[AnnouncementController::class,'create'])->name('AnnouncementAction');
-
 Route::post('/register',[RegisterController::class,'create'])->name('RegisterAction');
 
 Route::post('/login',[LogInController::class,'create'])->name('LogInAction');
 
 Route::post('/admin/login',[AdminController::class,'create'])->name('AdminLogInAction');
+
+Route::post('/event',[AdminEventController::class,'create'])->name('EventAction');
+
+Route::post('/announcement',[AdminAnnouncementController::class,'create'])->name('AnnouncementAction');
+

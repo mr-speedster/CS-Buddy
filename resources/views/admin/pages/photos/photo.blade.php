@@ -30,7 +30,21 @@
                         <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Description">
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Submit</button>
-                      <button class="btn btn-dark">Cancel</button>
+                      @if (\Session::has('success'))
+                      <script type="text/javascript">
+                        Swal.fire({
+                            icon: 'success',
+                            text: 'Successfully Added',
+                        })
+                      </script>
+                    @elseif ($errors->any())
+                        <script type="text/javascript">
+                          Swal.fire({
+                              icon: 'error',
+                              text: 'Something Went Wrong!',
+                          })
+                      </script>
+                    @endif
                     </form>
                   </div>
                 </div>
