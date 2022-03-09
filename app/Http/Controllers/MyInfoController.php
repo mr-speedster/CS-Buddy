@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\CsUser;
 class MyInfoController extends Controller
 {
     /**
@@ -13,6 +13,8 @@ class MyInfoController extends Controller
      */
     public function index()
     {
+        $email = session('email');
+        $user = CsUser::where('email',$email)->firstOrFail();
         return view("pages.myDetails.myInfo");
     }
 

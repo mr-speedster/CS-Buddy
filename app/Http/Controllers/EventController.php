@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CsUser;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -13,7 +14,9 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view("pages.eventBoard.eventBoard");
+        $email = session('email');
+        $user = CsUser::where('email',$email)->firstOrFail();
+        return view("pages.eventBoard.eventBoard",['user'=>$user]);
     }
 
     /**

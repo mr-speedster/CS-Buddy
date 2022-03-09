@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CsUser;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 
@@ -35,19 +36,21 @@ class RegisterController extends Controller
         $blood = $request->post('blood_group');
         $password = $request->post('password');
 
-        $validate = $request->validate([
-            'user_name' => 'min:2 | max:100',
-            'user_pass' => 'min:8 | max:100',
-        ]);
+        $cs_user = new CsUser();
 
-        if ($request->post('user_pass') !== $request->post('conform_pass')) {
-            return redirect('/user/signup')->withErrors('Password not match!');
-        }
+        $cs_user->user_name = $name;
+        $cs_user->roll_no = $roll_no;
+        $cs_user->email = $email;
+        $cs_user->sem = $sem;
+        $cs_user->touter = $touter;
+        $cs_user->addmisson_no = $admission_no;
+        $cs_user->address = $address;
+        $cs_user->blood = $blood;
+        $cs_user->gender = $gender;
+        $cs_user->password = $password;
+        $cs_user->save();
 
-        $user = new User();
-        
-
-        return redirect(route('EventBoard'));
+        return redirect(route('LogIn'));
     }
 
     /**

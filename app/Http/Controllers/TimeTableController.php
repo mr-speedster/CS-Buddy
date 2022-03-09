@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\CsUser;
 use Illuminate\Http\Request;
 
 class TimeTableController extends Controller
@@ -13,6 +13,8 @@ class TimeTableController extends Controller
      */
     public function index()
     {
+        $email = session('email');
+        $user = CsUser::where('email',$email)->firstOrFail();
         return view('pages.timeTable.timetable');
     }
 

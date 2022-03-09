@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CsUser;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 
@@ -25,8 +26,20 @@ class LogInController extends Controller
     public function create(Request $request)
     {
         $email = $request->post('email');
-        $pass = $request->post('password');
-        return redirect(route('EventBoard'));
+        $password = $request->post('password');
+
+        $loginUser = new CsUser();
+        $user_validate = $loginUser
+            ->where('email', '=', $email)
+            ->where('password', '=', $password)
+            ->count();
+        //dd($user_validate);
+        $request->session()->put('email', $email);
+        if ($user_validate == 1) {
+            return redirect(route('EventBoard'));
+        }else{
+            return redirect(route('LogIn'))->withErrors('Something Want wrong,Try Again');
+        }
     }
 
     /**
