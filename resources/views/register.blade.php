@@ -54,8 +54,8 @@
                             <input type="text" class="form-control" id="touter" name="touter" placeholder="Touter">
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputName1">Addmission No</label>
-                            <input type="text" class="form-control" id="addmission_no" name="addmission_no" placeholder="Addmission No">
+                            <label for="exampleInputName1">Admission No</label>
+                            <input type="text" class="form-control" id="addmission_no" name="admission_no" placeholder="Addmission No">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputEmail3">Email address</label>
@@ -74,7 +74,7 @@
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword4">Blood Group</label>
-                            <input type="password" class="form-control" id="blood_group" name="blood_group" placeholder="blood group">
+                            <input type="text" class="form-control" id="blood_group" name="blood_group" placeholder="blood group">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword4">Password</label>
