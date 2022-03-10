@@ -22,49 +22,49 @@ class ViewController extends Controller
     public function UserView()
     {
         $user = CsUser::all();
-        return view('admin.view.userview',['users'=>$user]);
+        return view('admin.Adminview.userview',['users'=>$user]);
     }
 
     public function EventView()
     {
         $event = Event::all();
-        return view('admin.view.eventview',['events'=>$event]);
+        return view('admin.Adminview.eventview',['events'=>$event]);
     }
 
     public function AnnouncementView()
     {
         $announce = Announcement::all();
-        return view('admin.view.announcementview',['announces'=>$announce]);
+        return view('admin.Adminview.announcementview',['announces'=>$announce]);
     }
 
     public function TimeTableView()
     {
         $table = TimeTable::all();
-        return view('admin.view.timetableview',['tables'=>$table]);
+        return view('admin.Adminview.timetableview',['tables'=>$table]);
     }
 
     public function AttendanceView()
     {
         $attend = Attendance::all();
-        return view('admin.view.attendanceview',['attends'=>$attend]);
+        return view('admin.Adminview.attendanceview',['attends'=>$attend]);
     }
 
     public function PhotosView()
     {
         $photo = Photos::all();
-        return view('admin.view.photosview',['photos'=>$photo]);
+        return view('admin.Adminview.photosview',['photos'=>$photo]);
     }
 
     public function AcademicsView()
     {
         $academic = Academics::all();
-        return view('admin.view.academicsview',['academics'=>$academic]);
+        return view('admin.Adminview.academicsview',['academics'=>$academic]);
     }
 
     public function AdminView()
     {
         $admin = Admin::all();
-        return view('admin.view.adminview',['admins'=>$admin]);
+        return view('admin.Adminview.adminview',['admins'=>$admin]);
     }
     /**
      * Show the form for creating a new resource.
