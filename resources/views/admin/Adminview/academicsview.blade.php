@@ -1,5 +1,5 @@
 @extends('admin.Adminview.layout.app')
-@section('main-content')   
+@section('main-content')  
  <!-- Academic handling -->
         <table class="table col-sm-6 col-lg-3">
           <thead class="thead-dark">

@@ -128,3 +128,7 @@ img{
 td{
     color: #fff;
 }
+
+a:active{
+    background-color:white;
+}
