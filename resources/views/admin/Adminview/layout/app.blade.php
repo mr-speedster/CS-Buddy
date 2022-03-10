@@ -29,28 +29,28 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{route('UserView')}}">Users</a>
+                    <a class="nav-link active" aria-current="page" href="#">Users</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('EventView')}}">Event</a>
+                    <a class="nav-link" href="#">Event</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('AnnouncementView')}}">Announcement</a>
+                    <a class="nav-link" href="#">Announcement</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('TimeTableView')}}">Time Table</a>
+                    <a class="nav-link" href="#">Time Table</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('AttendanceView')}}">Attendance</a>
+                    <a class="nav-link" href="#">Attendance</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('PhotosView')}}">Photos</a>
+                    <a class="nav-link" href="#">Photos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('AdminView')}}">Academics</a>
+                    <a class="nav-link" href="#">Academics</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('')}}">Admin</a>
+                    <a class="nav-link" href="#">Admin</a>
                   </li>
                 </ul>
               </div>

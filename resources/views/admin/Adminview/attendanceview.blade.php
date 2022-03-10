@@ -1,4 +1,4 @@
-@extends('admin.view.layout.app')
+@extends('admin.Adminview.layout.app')
 @section('main-content')
     <!-- Main Site -->
     <main id="site-main">
