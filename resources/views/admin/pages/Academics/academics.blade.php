@@ -6,7 +6,7 @@
               <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Attendance</h4>
+                    <h4 class="card-title">Academics</h4>
                      
                     <form class="forms-sample" action="{{route('AcademicsAction')}}" method="POST">
                       @csrf

@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #191c24;
+}
+
 a {
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
@@ -101,7 +105,7 @@ table{
 }
 
 .table tr:hover{
-    background-color:cyan ;
+    background-color:rgba(0, 0, 0, 0.445) ;
 }
 
 .table tr:hover td > a{
@@ -120,4 +124,7 @@ img{
 
 .navbar-brand{
     font-weight: 700;
+}
+td{
+    color: #fff;
 }

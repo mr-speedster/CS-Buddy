@@ -29,28 +29,28 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Users</a>
+                    <a class="nav-link" aria-current="page" href="{{url(route('UserView'))}}">Users</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Event</a>
+                    <a class="nav-link" href="{{url(route('EventView'))}}">Event</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Announcement</a>
+                    <a class="nav-link" href="{{url(route('AnnouncementView'))}}">Announcement</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Time Table</a>
+                    <a class="nav-link" href="{{url(route('TimeTableView'))}}">Time Table</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Attendance</a>
+                    <a class="nav-link" href="{{url(route('AttendanceView'))}}">Attendance</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Photos</a>
+                    <a class="nav-link" href="{{url(route('PhotosView'))}}">Photos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Academics</a>
+                    <a class="nav-link" href="{{url(route('AcademicsView'))}}">Academics</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Admin</a>
+                    <a class="nav-link" href="{{url(route('AdminView'))}}">Admin</a>
                   </li>
                 </ul>
               </div>
@@ -58,9 +58,19 @@
           </nav>
     </header>
     <!-- /Header -->
-
-    @yield('main-content')
-    
+    <!-- Main Site -->
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between m-2">
+          <a href="#" class="border-shadow bg-black">
+            <span class="text-light">
+              ADMIN | Panel <i class="fas fa-user"></i>
+            </span>
+          </a>
+        </div>
+        @yield('main-content')
+      </div>
+    </main>
 
     <script>
         var myModal = document.getElementById("myModal");
