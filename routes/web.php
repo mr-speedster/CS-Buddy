@@ -119,3 +119,22 @@ Route::get('/admin/view/photos',[ViewController::class,'PhotosView'])->name("Pho
 Route::get('/admin/view/academics',[ViewController::class,'AcademicsView'])->name("AcademicsView");
 
 Route::get('/admin/view/admin',[ViewController::class,'AdminView'])->name("AdminView");
+
+
+/*******Delete */
+
+Route::get('/admin/view/user/{id}',[ViewController::class,'UserDelete'])->name("UserDelete");
+
+Route::get('/admin/view/event/{id}',[ViewController::class,'EventDelete'])->name("EventDelete");
+
+Route::get('/admin/view/announcement/{id}',[ViewController::class,'AnnouncementDelete'])->name("AnnouncementDelete");
+
+Route::get('/admin/view/timetable/{id}',[ViewController::class,'TimeTableDelete'])->name("TimeTableDelete");
+
+Route::get('/admin/view/attendance/{id}',[ViewController::class,'AttendanceDelete'])->name("AttendanceDelete");
+
+Route::get('/admin/view/photos/{id}',[ViewController::class,'PhotosDelete'])->name("PhotosDelete");
+
+Route::get('/admin/view/academics/{id}',[ViewController::class,'AcademicsDelete'])->name("AcademicsDelete");
+
+Route::get('/admin/view/admin/{id}',[ViewController::class,'AdminDelete'])->name("AdminDelete");

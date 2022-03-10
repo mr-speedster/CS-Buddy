@@ -21,6 +21,7 @@ class CreateAcademicsTable extends Migration
             $table->string("mark",25);
             $table->string("credit",25);
             $table->string("roll_no",25)->primary();
+            $table->integer('id');
             $table->timestamps();
         });
     }

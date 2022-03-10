@@ -66,6 +66,60 @@ class ViewController extends Controller
         $admin = Admin::all();
         return view('admin.Adminview.adminview',['admins'=>$admin]);
     }
+
+
+    /**Delete */
+
+    public function UserDelete($id)
+    {
+        CsUser::where('id',$id)->delete();
+        return back();
+    }
+
+    public function EventDelete($id)
+    {
+        $event = Event::where('id',$id)->first()->delete();
+        return back();
+    }
+
+    public function AnnouncementDelete($id)
+    {
+        $announce = Announcement::where('id',$id)->delete();
+        return back();
+    }
+
+    public function TimeTableDelete($id)
+    {
+        $table = TimeTable::where('id',$id)->delete();
+        return back();
+    }
+
+    public function AttendanceDelete($id)
+    {
+        $attend = Attendance::where('id',$id)->delete();
+        return back();
+    }
+
+    public function PhotosDelete($id)
+    {
+        $photo = Photos::where('id',$id)->delete();
+        return back();
+    }
+
+    public function AcademicsDelete($id)
+    {
+        $academic = Academics::where('id',$id)->first();
+        $academic->delete();
+        return back();
+    }
+
+    public function AdminDelete($id)
+    {
+        $admin = Admin::where('id',$id)->delete();
+        return back();
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

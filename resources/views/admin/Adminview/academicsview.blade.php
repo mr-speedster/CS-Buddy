@@ -4,6 +4,7 @@
         <table class="table col-sm-6 col-lg-3">
           <thead class="thead-dark">
             <tr>
+              <th>ID</th>
               <th>Exam Name</th>
               <th>Date</th>
               <th>Order</th>
@@ -17,6 +18,7 @@
           <tbody>
             @foreach ($academics as $academic)
             <tr>
+              <td>{{$academic->id}}</td>
               <td>{{$academic->exam_name}}</td>
               <td>{{$academic->date}}</td>
               <td>{{$academic->no}}</td>
@@ -26,7 +28,7 @@
               <td>{{$academic->roll_no}}</td>              
               <td>
                 <a href="#"><i class="fas fa-pen text-info"></i></a><br />
-                <a href="#"><i class="far fa-trash-alt text-danger"></i></a>
+                <a onclick="alert('Are You sure?')" href="{{url(route('AcademicsDelete',['id'=>$academic->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
               </td>
             </tr>
             @endforeach
