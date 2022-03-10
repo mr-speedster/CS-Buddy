@@ -18,7 +18,11 @@ class AcademicsController extends Controller
         $email = session('email');
         $user = CsUser::where('email',$email)->firstOrFail();
         $academics = Academics::where('roll_no',$user->roll_no);
-        return view("pages.myDetails.academics",['user'=>$user,'academics'=>$academics]);
+        if($academics == null){
+            return back()->withErrors('No result');
+        }else{
+            return view("pages.myDetails.academics",['user'=>$user,'academics'=>$academics]);
+        }
     }
 
     /**
