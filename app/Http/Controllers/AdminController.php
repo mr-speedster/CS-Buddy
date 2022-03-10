@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -23,7 +24,31 @@ class AdminController extends Controller
      */
     public function create(Request $request)
     {
-        return redirect(route('AdminEvent'));
+        /*This is for create admin in heroku
+
+        $email = $request->post('email');
+        $password = $request->post('password');
+        $admin = new Admin();
+        $admin->email = $email;
+        $admin->password = $password;
+        $admin->save();
+        return redirect(route('AdminLogin'));
+        */
+        
+        $email = $request->post('email');
+        $password = $request->post('password');
+
+        $admin = new Admin();
+        $admin_validate = $admin
+            ->where('email', '=', $email)
+            ->where('password', '=', $password)
+            ->count();
+        $request->session()->put('email', $email);
+        if ($admin_validate == 1) {
+            return redirect(route('AdminEvent'));
+        }else{
+            return redirect(route('AdminLogin'))->withErrors('Check your mail or Password');
+        }
     }
 
     /**

@@ -7,6 +7,16 @@
                     <div class="card">
                       <div class="card-body">
                         <h4 class="card-title">Mark List</h4>
+                      @if ($academics->first() == null)
+                        <script type="text/javascript">
+                          Swal.fire({
+                              icon: 'error',
+                              text: 'Not Updated',
+                          }).then(function() {
+                              window.location = "/myinfo";
+                          });
+                        </script>
+                      @else
                         <p class="card-description">{{$academics->first()->exam_name}}<code>12/12/2021</code>
                         </p>
                         <div class="table-responsive">
@@ -29,6 +39,7 @@
                             </tbody>
                           </table>
                         </div>
+                      @endif
                       </div>
                     </div>
                   </div>

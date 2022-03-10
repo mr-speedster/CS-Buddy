@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Academics;
-use App\Models\CsUser;
 use Illuminate\Http\Request;
 
-class AcademicsController extends Controller
+class ViewController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +13,7 @@ class AcademicsController extends Controller
      */
     public function index()
     {
-        $email = session('email');
-        $user = CsUser::where('email',$email)->firstOrFail();
-        $academics = Academics::where('roll_no',$user->roll_no);
-        return view("pages.myDetails.academics",['user'=>$user,'academics'=>$academics]);
+        return view('admin.view.mainview');
     }
 
     /**
