@@ -102,6 +102,20 @@ Route::post('/photos',[AdminPhotosController::class,'create'])->name('PhotosActi
 
 Route::post('/livechat',[ChatController::class,'create'])->name("liveChatAction");
 
-/********************Admin View */
+/******************** Admin View **************/
 
-Route::get('/admin/view',[ViewController::class,'index'])->name("MainView");
+Route::get('/admin/view/user',[ViewController::class,'UserView'])->name("UserView");
+
+Route::get('/admin/view/event',[ViewController::class,'EventView'])->name("EventView");
+
+Route::get('/admin/view/announcement',[ViewController::class,'AnnouncementView'])->name("AnnouncementView");
+
+Route::get('/admin/view/timetable',[ViewController::class,'TimeTableView'])->name("TimeTableView");
+
+Route::get('/admin/view/attendance',[ViewController::class,'AttendanceView'])->name("AttendanceView");
+
+Route::get('/admin/view/photos',[ViewController::class,'PhotosView'])->name("PhotosView");
+
+Route::get('/admin/view/academics',[ViewController::class,'AcademicsView'])->name("AcademicsView");
+
+Route::get('/admin/view/admin',[ViewController::class,'AdminView'])->name("AdminView");

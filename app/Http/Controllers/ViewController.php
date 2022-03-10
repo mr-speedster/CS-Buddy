@@ -2,6 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Academics;
+use App\Models\Admin;
+use App\Models\Announcement;
+use App\Models\Attendance;
+use App\Models\CsUser;
+use App\Models\Event;
+use App\Models\Photos;
+use App\Models\TimeTable;
 use Illuminate\Http\Request;
 
 class ViewController extends Controller
@@ -11,11 +19,53 @@ class ViewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function UserView()
     {
-        return view('admin.view.mainview');
+        $user = CsUser::all();
+        return view('admin.view.userview',['users'=>$user]);
     }
 
+    public function EventView()
+    {
+        $event = Event::all();
+        return view('admin.view.eventview',['events'=>$event]);
+    }
+
+    public function AnnouncementView()
+    {
+        $announce = Announcement::all();
+        return view('admin.view.announcementview',['announces'=>$announce]);
+    }
+
+    public function TimeTableView()
+    {
+        $table = TimeTable::all();
+        return view('admin.view.timetableview',['tables'=>$table]);
+    }
+
+    public function AttendanceView()
+    {
+        $attend = Attendance::all();
+        return view('admin.view.attendanceview',['attends'=>$attend]);
+    }
+
+    public function PhotosView()
+    {
+        $photo = Photos::all();
+        return view('admin.view.photosview',['photos'=>$photo]);
+    }
+
+    public function AcademicsView()
+    {
+        $academic = Academics::all();
+        return view('admin.view.academicsview',['academics'=>$academic]);
+    }
+
+    public function AdminView()
+    {
+        $admin = Admin::all();
+        return view('admin.view.adminview',['admins'=>$admin]);
+    }
     /**
      * Show the form for creating a new resource.
      *
