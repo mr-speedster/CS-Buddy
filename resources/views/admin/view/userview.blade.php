@@ -28,7 +28,6 @@
               <th>Gender</th>
               <th>Password</th>
               <th>Action</th>
-              <th>Show</th>
             </tr>
           </thead>
           <tbody>
@@ -49,67 +48,10 @@
                 <a href="#"><i class="fas fa-pen text-dark"></i></a><br />
                 <a href="#"><i class="far fa-trash-alt text-danger"></i></a>
               </td>
-              <td>
-                <a
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                  href=""
-                  type="button"
-                  >View</a
-                >
-              </td>
             </tr>
             @endforeach
           </tbody>
         </table>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-            >
-            <div class="modal-dialog">
-              <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Details</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    image
-                  </li>
-                  <li class="list-group-item">Citizen</li>
-                  <li class="list-group-item">location</li>
-                  <li class="list-group-item">City</li>
-                  <li class="list-group-item">
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-danger"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
     <!-- /Main Site -->

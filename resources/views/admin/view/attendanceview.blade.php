@@ -17,97 +17,39 @@
           <thead class="thead-dark">
             <tr>
               <th>ID</th>
-              <th>Name</th>
               <th>Roll No</th>
-              <th>Email</th>
-              <th>Semester</th>
-              <th>Touter</th>
-              <th>Admission</th>
-              <th>Address</th>
-              <th>Blood</th>
-              <th>Gender</th>
-              <th>Password</th>
+              <th>CST 301</th>
+              <th>CST 301</th>
+              <th>CST 305</th>
+              <th>CST 307</th>
+              <th>CST 309</th>
+              <th>MNC 301</th>
+              <th>CST 331</th>
+              <th>CST 333</th>
               <th>Action</th>
-              <th>Show</th>
             </tr>
           </thead>
           <tbody>
+            @foreach ($attends as $attend)
             <tr>
-              <td>1</td>
-              <td>Citizen</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>{{$attend->id}}</td>
+              <td>{{$attend->roll_no}}</td>
+              <td>{{$attend->cst_301}} %</td>
+              <td>{{$attend->cst_303}} %</td>
+              <td>{{$attend->cst_305}} %</td>
+              <td>{{$attend->cst_307}} %</td>
+              <td>{{$attend->cst_309}} %</td>
+              <td>{{$attend->mnc_301}} %</td>
+              <td>{{$attend->cst_331}} %</td>
+              <td>{{$attend->cst_333}} %</td>
               <td>
-                <a href="#"><i class="fas fa-pen text-dark"></i></a><br /><br />
+                <a href="#"><i class="fas fa-pen text-dark"></i></a><br />
                 <a href="#"><i class="far fa-trash-alt text-danger"></i></a>
               </td>
-              <td>
-                <a
-                  class="btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                  href=""
-                  type="button"
-                  >View</a
-                >
-              </td>
             </tr>
+            @endforeach
           </tbody>
         </table>
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-            >
-            <div class="modal-dialog">
-              <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Details</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    image
-                  </li>
-                  <li class="list-group-item">Citizen</li>
-                  <li class="list-group-item">location</li>
-                  <li class="list-group-item">City</li>
-                  <li class="list-group-item">
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-danger"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
     <!-- /Main Site -->
