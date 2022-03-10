@@ -7,7 +7,7 @@
                     <div class="card">
                       <div class="card-body">
                         <h4 class="card-title">Mark List</h4>
-                        <p class="card-description">Fisrt Series<code>12/12/2021</code>
+                        <p class="card-description">{{$academics->first()->exam_name}}<code>12/12/2021</code>
                         </p>
                         <div class="table-responsive">
                           <table class="table">
@@ -20,36 +20,12 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>FLAT</td>
-                                <td>25</td>
-                                <td>4</td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>CN</td>
-                                <td>25</td>
-                                <td>4</td>
-                              </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>SS</td>
-                                <td>25</td>
-                                <td>4</td>
-                              </tr>
-                              <tr>
-                                <td>4</td>
-                                <td>MSS</td>
-                                <td>25</td>
-                                <td>4</td>
-                              </tr>
-                              <tr>
-                                <td>5</td>
-                                <td>MCMP</td>
-                                <td>25</td>
-                                <td>4</td>
-                              </tr>
+                                <tr>
+                                  <td>{{$academics->first()->no}}</td>
+                                  <td>{{$academics->first()->subject}}</td>
+                                  <td>{{$academics->first()->mark}}</td>
+                                  <td>{{$academics->first()->credit}}</td>
+                                </tr>
                             </tbody>
                           </table>
                         </div>

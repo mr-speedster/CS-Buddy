@@ -132,7 +132,7 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{route('MyInfo')}}">  MyInfo</a></li>
                  
-                <li class="nav-item"> <a class="nav-link" href="{{route('Academics')}}"> Academics </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('Academics')}}"> Academics </a></li>
               </ul>
             </div>
           </li>
@@ -220,7 +220,6 @@
   <script src="/assets/js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page -->
-  <script src="/assets/js/dashboard.js"></script>
   <!-- End custom js for this page -->
 </body>
 </html>

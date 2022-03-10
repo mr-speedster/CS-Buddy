@@ -15,6 +15,10 @@
                         <input type="text" class="form-control" name="exam_name" id="exampleInputUsername1" placeholder="eg: Series 1">
                       </div>
                       <div class="form-group">
+                        <label for="exampleInputConfirmPassword1">Roll No</label>
+                        <input type="text" class="form-control" name="roll_no" id="exampleInputConfirmPassword1" placeholder="Roll No">
+                      </div>
+                      <div class="form-group">
                         <label for="exampleInputEmail1">Date</label>
                         <input type="text" class="form-control" name="date" id="exampleInputEmail1" placeholder="Datee">
                       </div>

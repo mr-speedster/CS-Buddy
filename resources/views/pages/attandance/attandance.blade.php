@@ -7,7 +7,9 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">My Attendance</h4>
-                    <canvas id="transaction-history" class="transaction-chart"></canvas>
+                    <div>
+                      halo
+                    </div>
                     <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                       <div class="text-md-center text-xl-left">
                         <h6 class="mb-1">Total Hour Attendance</h6>

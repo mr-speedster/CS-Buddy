@@ -63,7 +63,7 @@
     }
     if ($("#transaction-history").length) {
       var areaData = {
-        labels: ["Paypal", "Stripe","Cash"],
+        labels: ["Absent", "Attandance","Cash"],
         datasets: [{
             data: [10,300],
             backgroundColor: [
@@ -133,7 +133,7 @@
     }
     if ($("#transaction-history-arabic").length) {
       var areaData = {
-        labels: ["Paypal", "Stripe","Cash"],
+        labels: ["Absent", "Attandance","Cash"],
         datasets: [{
             data: [55, 25, 20],
             backgroundColor: [

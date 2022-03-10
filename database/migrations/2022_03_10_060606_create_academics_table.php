@@ -14,13 +14,13 @@ class CreateAcademicsTable extends Migration
     public function up()
     {
         Schema::create('academics', function (Blueprint $table) {
-            $table->id();
             $table->string("exam_name",225);
             $table->string("date",25);
             $table->string("no",25);
             $table->string("subject",225);
             $table->string("mark",25);
             $table->string("credit",25);
+            $table->string("roll_no",25)->primary();
             $table->timestamps();
         });
     }

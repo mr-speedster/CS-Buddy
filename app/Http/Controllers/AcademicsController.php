@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Academics;
 use App\Models\CsUser;
 use Illuminate\Http\Request;
 
@@ -15,7 +17,8 @@ class AcademicsController extends Controller
     {
         $email = session('email');
         $user = CsUser::where('email',$email)->firstOrFail();
-        return view("pages.myDetails.academics",['user'=>$user]);
+        $academics = Academics::where('roll_no',$user->roll_no);
+        return view("pages.myDetails.academics",['user'=>$user,'academics'=>$academics]);
     }
 
     /**
