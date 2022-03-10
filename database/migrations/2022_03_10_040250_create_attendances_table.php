@@ -15,12 +15,16 @@ class CreateAttendancesTable extends Migration
     {
         Schema::create('attendances', function (Blueprint $table) {
             $table->id();
-            $table->string("code",25);
-            $table->string("percent",25);
-            $table->string("subject",225);
-            $table->string("teacher",225);
-            $table->string("date",25);
-            $table->string("time",25);
+            $table->string('roll_no');
+            $table->integer('cst_301');
+            $table->integer('cst_303');
+            $table->integer('cst_305');
+            $table->integer('cst_307');
+            $table->integer('cst_309');
+            $table->integer('mnc_301');
+            $table->integer('cst_331');
+            $table->integer('cst_333');
+            $table->string('date',25);
             $table->timestamps();
         });
     }
