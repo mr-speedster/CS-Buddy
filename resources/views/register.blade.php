@@ -51,7 +51,7 @@
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">Tutor</label>
-                            <input type="text" class="form-control" id="touter" name="touter" placeholder="Touter">
+                            <input type="text" class="form-control" id="touter" name="touter" placeholder="Tutor">
                           </div>
                           <div class="form-group">
                             <label for="exampleInputName1">Admission No</label>
