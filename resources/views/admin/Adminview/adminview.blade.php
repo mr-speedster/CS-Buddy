@@ -1,4 +1,12 @@
 @extends('admin.Adminview.layout.app')
+@section('link-name','ADMIN')
+@section('admin')
+<a href="{{url(route('AddAdmin'))}}" class="border-shadow bg-black">
+  <span class="text-light">
+    ADD+ <i class="fas fa-user"></i>
+  </span>
+</a>
+@endsection()
 @section('main-content')
     <!-- Main Site -->
   <!-- admin handling -->

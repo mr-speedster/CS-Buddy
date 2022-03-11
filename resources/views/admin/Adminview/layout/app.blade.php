@@ -63,11 +63,12 @@
     <main id="site-main">
       <div class="container">
         <div class="box-nav d-flex justify-between m-2">
-          <a href="#" class="border-shadow bg-black">
+          <a href="@yield('route-link')" class="border-shadow bg-black">
             <span class="text-light">
-              ADMIN | Panel <i class="fas fa-user"></i>
+              @yield('link-name') | Panel <i class="fas fa-user"></i>
             </span>
           </a>
+          @yield('admin')
         </div>
         @yield('main-content')
       </div>

@@ -1,4 +1,6 @@
 @extends('admin.Adminview.layout.app')
+@section('route-link','')
+@section('link-name','USER')
 @section('main-content')
     <!-- Main Site -->
         <!-- User handling -->

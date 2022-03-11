@@ -1,4 +1,6 @@
 @extends('admin.Adminview.layout.app')
+@section('route-link','/admin/attandance')
+@section('link-name','ATTENDANCE')
 @section('main-content')
     <!-- Main Site -->
  

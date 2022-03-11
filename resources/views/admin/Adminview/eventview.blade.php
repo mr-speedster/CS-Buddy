@@ -1,4 +1,6 @@
 @extends('admin.Adminview.layout.app')
+@section('route-link','/admin/eventboard')
+@section('link-name','EVENT')
 @section('main-content')
     <!-- Main Site -->
  

@@ -1,4 +1,6 @@
 @extends('admin.Adminview.layout.app')
+@section('route-link','/admin/academics')
+@section('link-name','ACADEMICS')
 @section('main-content')  
  <!-- Academic handling -->
         <table class="table col-sm-6 col-lg-3">

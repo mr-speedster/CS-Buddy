@@ -1,4 +1,6 @@
 @extends('admin.Adminview.layout.app')
+@section('route-link','/admin/timetable')
+@section('link-name','TIME TABLE')
 @section('main-content')
     <!-- Main Site -->
  

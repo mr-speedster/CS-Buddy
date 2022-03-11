@@ -1,4 +1,6 @@
 @extends('admin.Adminview.layout.app')
+@section('route-link','/admin/photos')
+@section('link-name','PHOTOS')
 @section('main-content')
     <!-- Main Site -->
  

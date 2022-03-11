@@ -1,4 +1,6 @@
 @extends('admin.Adminview.layout.app')
+@section('route-link','/admin/announcement')
+@section('link-name','ANNOUNCEMENT')
 @section('main-content')
     <!-- Main Site -->
         <!-- announce handling -->
