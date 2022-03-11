@@ -60,7 +60,6 @@ Route::get('/livechat',[ChatController::class,'index'])->name("liveChat");
 
 //Admin
 
-
 Route::get('/admin/login',[AdminController::class,'index'])->name("AdminLogin");
 
 Route::get('/admin/eventboard',[AdminEventController::class,'index'])->name('AdminEvent');
