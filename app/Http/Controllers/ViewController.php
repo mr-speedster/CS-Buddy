@@ -164,7 +164,7 @@ class ViewController extends Controller
     public function AnnouncementUpdate($id)
     {
         $announce = Announcement::where('id',$id)->first();
-        return view('admin.update.announcementupdate',['announces'=>$announce]);
+        return view('admin.update.announcementupdate',['announce'=>$announce]);
     }
 
     public function AnnouncementUpdateAction(Request $request,$id)
@@ -199,23 +199,23 @@ class ViewController extends Controller
     public function AttendanceUpdate($id)
     {
         $attend = Attendance::where('id',$id)->first();
-        return view('admin.update.attendanceupdate',['attends'=>$attend]);
+        return view('admin.update.attendanceupdate',['attend'=>$attend]);
     }
 
     public function AttendanceUpdateAction(Request $request,$id)
     {
-        $attendance = Attendance::where('id',$id)->first();
-            $attendance->roll_no = $request->post('roll_no');
-            $attendance->cst_301 = $request->post('code1');
-            $attendance->cst_303 = $request->post('code2');
-            $attendance->cst_305 = $request->post('code3');
-            $attendance->cst_307 = $request->post('code4');
-            $attendance->cst_309 = $request->post('code5');
-            $attendance->mnc_301 = $request->post('code6');
-            $attendance->cst_331 = $request->post('code7');
-            $attendance->cst_333 = $request->post('code8');
-            $attendance->date = $request->post('date');
-            $attendance->save();
+        $attend = Attendance::where('id',$id)->first();
+            $attend->roll_no = $request->post('roll_no');
+            $attend->cst_301 = $request->post('code1');
+            $attend->cst_303 = $request->post('code2');
+            $attend->cst_305 = $request->post('code3');
+            $attend->cst_307 = $request->post('code4');
+            $attend->cst_309 = $request->post('code5');
+            $attend->mnc_301 = $request->post('code6');
+            $attend->cst_331 = $request->post('code7');
+            $attend->cst_333 = $request->post('code8');
+            $attend->date = $request->post('date');
+            $attend->save();
         return redirect(route('AttendanceView'));
     }
 
