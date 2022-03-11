@@ -27,7 +27,7 @@
               <td>{{$academic->credit}}</td>
               <td>{{$academic->roll_no}}</td>              
               <td>
-                <a href="#"><i class="fas fa-pen text-info"></i></a><br />
+                <a onclick="alert('Are You sure?')" href="{{url(route('',['id'=>$->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
                 <a onclick="alert('Are You sure?')" href="{{url(route('AcademicsDelete',['id'=>$academic->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
               </td>
             </tr>

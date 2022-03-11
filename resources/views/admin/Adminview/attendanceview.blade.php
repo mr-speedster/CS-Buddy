@@ -35,7 +35,7 @@
               <td>{{$attend->cst_331}} %</td>
               <td>{{$attend->cst_333}} %</td>
               <td>
-                <a href="#"><i class="fas fa-pen text-info"></i></a><br />
+                <a onclick="alert('Are You sure?')" href="{{url(route('',['id'=>$->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
                 <a onclick="alert('Are You sure?')" href="{{url(route('AttendanceDelete',['id'=>$attend->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
               </td>
             </tr>
