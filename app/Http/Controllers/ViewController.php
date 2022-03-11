@@ -124,7 +124,7 @@ class ViewController extends Controller
     public function UserUpdate($id)
     {
         $user = CsUser::where('id',$id)->first();
-        return view('admin.update.userupdate',['users'=>$user]);
+        return view('admin.update.userupdate',['user'=>$user]);
     }
 
     public function UserUpdateAction(Request $request,$id)
@@ -181,7 +181,7 @@ class ViewController extends Controller
     public function TimeTableUpdate($id)
     {
         $table = TimeTable::where('id',$id)->first();
-        return view('admin.update.timetableupdate',['tables'=>$table]);
+        return view('admin.update.timetableupdate',['table'=>$table]);
     }
 
     public function TimeTableUpdateAction(Request $request,$id)
@@ -222,7 +222,7 @@ class ViewController extends Controller
     public function PhotosUpdate($id)
     {
         $photo = Photos::where('id',$id)->first();
-        return view('admin.update.photosupdate',['photos'=>$photo]);
+        return view('admin.update.photosupdate',['photo'=>$photo]);
     }
 
     public function PhotosUpdateAction(Request $request,$id)

@@ -29,13 +29,13 @@
               <td>{{$user->email}}</td>
               <td>{{$user->sem}}</td>
               <td>{{$user->touter}}</td>
-              <td>{{$user->admission_no}}</td>
+              <td>{{$user->addmisson_no}}</td>
               <td>{{$user->address}}</td>
               <td>{{$user->blood}}</td>
               <td>{{$user->gender}}</td>
               <td>{{$user->password}}</td>
               <td>
-                <a href="{{url(route('',['id'=>$->id]))}}"><i class="fas fa-pen text-info"></i></a><br />
+                <a href="{{url(route('UserUpdate',['id'=>$user->id]))}}"><i class="fas fa-pen text-info"></i></a><br />
                 <a onclick="alert('Are You sure?')" href="{{url(route('UserDelete',['id'=>$user->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
               </td>
             </tr>
