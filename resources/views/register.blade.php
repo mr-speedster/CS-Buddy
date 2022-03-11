@@ -50,7 +50,7 @@
                             <input type="text" class="form-control" id="sem" name="sem" placeholder="Semester">
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputName1">Touter</label>
+                            <label for="exampleInputName1">Tutor</label>
                             <input type="text" class="form-control" id="touter" name="touter" placeholder="Touter">
                           </div>
                           <div class="form-group">
