@@ -23,18 +23,7 @@ class AdminController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(Request $request)
-    {
-        /*This is for create admin in heroku
-
-        $email = $request->post('email');
-        $password = $request->post('password');
-        $admin = new Admin();
-        $admin->email = $email;
-        $admin->password = $password;
-        $admin->save();
-        return redirect(route('AdminLogin'));
-        */
-        
+    {   
         $email = $request->post('email');
         $password = $request->post('password');
 
@@ -49,6 +38,22 @@ class AdminController extends Controller
         }else{
             return redirect(route('AdminLogin'))->withErrors('Check your mail or Password');
         }
+    }
+
+    public function addAdmin()
+    {
+        return view('admin.addadmin');
+    }
+
+    public function addAdminAction(Request $request)
+    {
+        $email = $request->post('email');
+        $password = $request->post('password');
+        $admin = new Admin();
+        $admin->email = $email;
+        $admin->password = $password;
+        $admin->save();
+        return redirect(route('AdminView'));
     }
 
     /**
