@@ -3,7 +3,7 @@
 @section('admin')
 <a href="{{url(route('AddAdmin'))}}" class="border-shadow bg-black">
   <span class="text-light">
-    ADD+ <i class="fas fa-user"></i>
+    ADD+ <i class="fas fa-user" style="color: red"></i>
   </span>
 </a>
 @endsection()
