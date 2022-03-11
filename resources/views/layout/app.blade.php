@@ -39,7 +39,7 @@
             <div class="profile-desc">
               <div class="profile-pic">
                 <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="/assets/images/faces/face15.jpg" alt="">
+                  <img class="img-xs rounded-circle " src="https://png.pngtree.com/png-vector/20191116/ourmid/pngtree-beautiful-admin-roles-line-vector-icon-png-image_1992804.jpg" alt="">
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
@@ -156,7 +156,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown">
                   <div class="navbar-profile">
-                    <img class="img-xs rounded-circle" src="/assets/images/faces/face15.jpg" alt="">
+                    <img class="img-xs rounded-circle" src="https://png.pngtree.com/png-vector/20191116/ourmid/pngtree-beautiful-admin-roles-line-vector-icon-png-image_1992804.jpg" alt="">
                     <p class="mb-0 d-none d-sm-block navbar-profile-name">{{$name}}</p>
                   </div>
                 </a>
