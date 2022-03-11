@@ -119,6 +119,158 @@ class ViewController extends Controller
         return back();
     }
 
+    /*update*/
+
+    public function UserUpdate($id)
+    {
+        $user = CsUser::where('id',$id)->first();
+        return view('admin.update.userupdate',['users'=>$user]);
+    }
+
+    public function UserUpdateAction(Request $request,$id)
+    {
+        $cs_user = CsUser::where('id',$id)->first();
+        $cs_user->user_name = $request->post('name');
+        $cs_user->roll_no = $request->post('roll_no');
+        $cs_user->email = $request->post('email');
+        $cs_user->sem = $request->post('sem');
+        $cs_user->touter = $request->post('touter');
+        $cs_user->addmisson_no = $request->post('admission_no');
+        $cs_user->address = $request->post('address');
+        $cs_user->blood = $request->post('blood_group');
+        $cs_user->gender = $request->post('gender');
+        $cs_user->password = $request->post('password');
+        $cs_user->save();
+        return redirect(route('UserView'));
+    }
+
+    public function EventUpdate($id)
+    {
+        $event = Event::where('id',$id)->first();
+        return view('admin.update.eventupdate',['events'=>$event]);
+    }
+
+    public function EventUpdateAction(Request $request,$id)
+    {
+        $event = Event::where('id',$id)->first();
+            $event->event_name = $request->post('event_name');
+            $event->event_logo = $request->post('logo_cdn'); 
+            $event->date = $request->post('date');
+            $event->time = $request->post('time');
+            $event->save();
+        return redirect(route('EventView'));
+    }
+
+    public function AnnouncementUpdate($id)
+    {
+        $announce = Announcement::where('id',$id)->first();
+        return view('admin.update.announcementupdate',['announces'=>$announce]);
+    }
+
+    public function AnnouncementUpdateAction(Request $request,$id)
+    {
+        $announce = Announcement::where('id',$id)->first();
+            $announce->msg = $request->post('message');
+            $announce->updator_name = $request->post('updator_name');
+            $announce->date = $request->post('date');
+            $announce->time = $request->post('time');
+            $announce->save();
+        return redirect(route('AnnouncementView'));
+    }
+
+    public function TimeTableUpdate($id)
+    {
+        $table = TimeTable::where('id',$id)->first();
+        return view('admin.update.timetableupdate',['tables'=>$table]);
+    }
+
+    public function TimeTableUpdateAction(Request $request,$id)
+    {
+        $table = TimeTable::where('id',$id)->first();
+            $table->day_name = $request->post('day_name');
+            $table->hour = $request->post('hour');
+            $table->subject = $request->post('subject');
+            $table->teacher = $request->post('teacher');
+            $table->time = $request->post('time');
+            $table->save();
+        return redirect(route('TimeTableView'));
+    }
+
+    public function AttendanceUpdate($id)
+    {
+        $attend = Attendance::where('id',$id)->first();
+        return view('admin.update.attendanceupdate',['attends'=>$attend]);
+    }
+
+    public function AttendanceUpdateAction(Request $request,$id)
+    {
+        $attendance = Attendance::where('id',$id)->first();
+            $attendance->roll_no = $request->post('roll_no');
+            $attendance->cst_301 = $request->post('code1');
+            $attendance->cst_303 = $request->post('code2');
+            $attendance->cst_305 = $request->post('code3');
+            $attendance->cst_307 = $request->post('code4');
+            $attendance->cst_309 = $request->post('code5');
+            $attendance->mnc_301 = $request->post('code6');
+            $attendance->cst_331 = $request->post('code7');
+            $attendance->cst_333 = $request->post('code8');
+            $attendance->date = $request->post('date');
+            $attendance->save();
+        return redirect(route('AttendanceView'));
+    }
+
+    public function PhotosUpdate($id)
+    {
+        $photo = Photos::where('id',$id)->first();
+        return view('admin.update.photosupdate',['photos'=>$photo]);
+    }
+
+    public function PhotosUpdateAction(Request $request,$id)
+    {
+        $photo = Photos::where('id',$id)->first();
+        $photo->cdn_link = $request->post('cdn_link');
+        $photo->celibration_name = $request->post('celibration_name');
+        $photo->club_name = $request->post('club_name');
+        $photo->date = $request->post('date');
+        $photo->msg = $request->post('msg');
+        $photo->save();
+        return redirect(route('PhotosView'));
+    }
+
+    public function AcademicsUpdate($id)
+    {
+        $academic = Academics::where('id',$id)->first();
+        return view('admin.update.academicsupdate',['academic'=>$academic]);
+    }
+
+    public function AcademicsUpdateAction(Request $request,$id)
+    {
+            $student = Academics::where('id',$id)->first();
+            $student->exam_name = $request->post('exam_name');
+            $student->date = $request->post('date');
+            $student->no = $request->post('no');
+            $student->subject = $request->post('subject');
+            $student->mark = $request->post('mark');
+            $student->credit = $request->post('credit');
+            $student->roll_no = $request->post('roll_no');
+            $student->save();
+            return redirect(route('AcademicsView'));
+    }
+
+    public function AdminUpdate($id)
+    {
+        $admin = Admin::where('id',$id)->first();
+        return view('admin.update.adminupdate',['admin'=>$admin]);
+    }
+
+    public function AdminUpdateAction(Request $request,$id)
+    {
+        $admin = Admin::where('id',$id)->first();
+        $admin->email = $request->post('email');
+        $admin->password = $request->post('password');
+        $admin->save();
+        return redirect(route('AdminView'));
+    }
 
     /**
      * Show the form for creating a new resource.

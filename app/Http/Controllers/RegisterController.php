@@ -25,29 +25,18 @@ class RegisterController extends Controller
      */
     public function create(Request $request)
     {
-        $name = $request->post('name');
-        $roll_no = $request->post('roll_no');
-        $sem = $request->post('sem');
-        $touter = $request->post('touter');
-        $admission_no = $request->post('admission_no');
-        $email = $request->post('email');
-        $address = $request->post('address');
-        $gender = $request->post('gender');
-        $blood = $request->post('blood_group');
-        $password = $request->post('password');
-
         $cs_user = new CsUser();
 
-        $cs_user->user_name = $name;
-        $cs_user->roll_no = $roll_no;
-        $cs_user->email = $email;
-        $cs_user->sem = $sem;
-        $cs_user->touter = $touter;
-        $cs_user->addmisson_no = $admission_no;
-        $cs_user->address = $address;
-        $cs_user->blood = $blood;
-        $cs_user->gender = $gender;
-        $cs_user->password = $password;
+        $cs_user->user_name = $request->post('name');
+        $cs_user->roll_no = $request->post('roll_no');
+        $cs_user->email = $request->post('email');
+        $cs_user->sem = $request->post('sem');
+        $cs_user->touter = $request->post('touter');
+        $cs_user->addmisson_no = $request->post('admission_no');
+        $cs_user->address = $request->post('address');
+        $cs_user->blood = $request->post('blood_group');
+        $cs_user->gender = $request->post('gender');
+        $cs_user->password = $request->post('password');
         $cs_user->save();
 
         return redirect(route('LogIn'));
