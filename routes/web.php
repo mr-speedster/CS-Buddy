@@ -63,6 +63,8 @@ Route::get('/livechat',[ChatController::class,'index'])->name("liveChat");
 
 Route::get('/admin/login',[AdminController::class,'index'])->name("AdminLogin");
 
+Route::get('/add/admin',[AdminController::class,'addAdmin'])->name('AddAdmin');
+
 Route::get('/admin/eventboard',[AdminEventController::class,'index'])->name('AdminEvent');
 
 Route::get('/admin/announcement',[AdminAnnouncementController::class,'index'])->name('AdminAnnouncement');
@@ -82,6 +84,8 @@ Route::get('/admin/academics',[AdminAcademicsController::class,'index'])->name('
 
 
 //Post method routes
+Route::post('/admin/add',[AdminController::class,'addAdminAction'])->name('AddAdminAction');
+
 Route::post('/register',[RegisterController::class,'create'])->name('RegisterAction');
 
 Route::post('/login',[LogInController::class,'create'])->name('LogInAction');

@@ -2,7 +2,7 @@
 @section('main-content')
     <!-- Main Site -->
  
-
+    <a href="{{url(route('AdminEvent'))}}">Add+</a>
         <!-- User handling -->
 
         <table class="table col-sm-6 col-lg-3">

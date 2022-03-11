@@ -14,7 +14,7 @@ class AdminAnnouncementController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.announcement.announcement');
+        return view('admin.addUser.addannouncement');
     }
 
     /**

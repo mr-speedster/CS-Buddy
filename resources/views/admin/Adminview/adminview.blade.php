@@ -2,6 +2,7 @@
 @section('main-content')
     <!-- Main Site -->
   <!-- admin handling -->
+        <a href="{{url(route('AddAdmin'))}}">Add+</a>
         <table class="table col-sm-6 col-lg-3">
           <thead class="thead-dark">
             <tr>

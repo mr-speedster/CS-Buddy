@@ -14,7 +14,7 @@ class AdminAcademicsController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.Academics.academics');
+        return view('admin.addUser.addacademics');
     }
 
     /**

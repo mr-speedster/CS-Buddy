@@ -2,7 +2,7 @@
 @section('main-content')
     <!-- Main Site -->
         <!-- announce handling -->
-
+        <a href="{{url(route('AdminAnnouncement'))}}">Add+</a>
         <table class="table col-sm-6 col-lg-3">
           <thead class="thead-dark">
             <tr>

@@ -1,6 +1,7 @@
 @extends('admin.Adminview.layout.app')
 @section('main-content')  
  <!-- Academic handling -->
+ <a href="{{url(route('AdminAcademics'))}}">Add+</a>
         <table class="table col-sm-6 col-lg-3">
           <thead class="thead-dark">
             <tr>

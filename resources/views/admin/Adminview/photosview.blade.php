@@ -1,7 +1,7 @@
 @extends('admin.Adminview.layout.app')
 @section('main-content')
     <!-- Main Site -->
- 
+    <a href="{{url(route('AdminPhotos'))}}">Add+</a>
 
         <!-- User handling -->
 

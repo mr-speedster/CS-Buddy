@@ -1,7 +1,7 @@
 @extends('admin.Adminview.layout.app')
 @section('main-content')
     <!-- Main Site -->
- 
+    <a href="{{url(route('AdminTimeTable'))}}">Add+</a>
 
         <!-- User handling -->
 

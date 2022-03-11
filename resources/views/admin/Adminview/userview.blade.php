@@ -2,7 +2,7 @@
 @section('main-content')
     <!-- Main Site -->
         <!-- User handling -->
-
+        <a href="#">Add+</a>
         <table class="table col-sm-6 col-lg-3">
           <thead class="thead-dark">
             <tr>

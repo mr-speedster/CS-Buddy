@@ -14,7 +14,7 @@ class AdminPhotosController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.photos.photo');
+        return view('admin.addUser.addphotos');
     }
 
     /**
