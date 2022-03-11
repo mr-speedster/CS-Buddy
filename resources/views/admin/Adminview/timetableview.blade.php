@@ -27,7 +27,7 @@
               <td>{{$table->teacher}}</td>
               <td>{{$table->time}}</td>
               <td>
-                <a onclick="alert('Are You sure?')" href="{{url(route('',['id'=>$->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
+                <a href="{{url(route('',['id'=>$->id]))}}"><i class="fas fa-pen text-info"></i></a><br />
                 <a onclick="alert('Are You sure?')" href="{{url(route('TimeTableDelete',['id'=>$table->id]))}}"><i class="far fa-trash-alt text-danger"></i></a>
               </td>
             </tr>

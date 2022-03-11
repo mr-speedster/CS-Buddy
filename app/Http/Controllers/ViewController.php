@@ -147,7 +147,7 @@ class ViewController extends Controller
     public function EventUpdate($id)
     {
         $event = Event::where('id',$id)->first();
-        return view('admin.update.eventupdate',['events'=>$event]);
+        return view('admin.update.eventupdate',['event'=>$event]);
     }
 
     public function EventUpdateAction(Request $request,$id)
